@@ -39,6 +39,7 @@ Partial Class Form1
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
@@ -59,8 +60,8 @@ Partial Class Form1
         Me.Button9 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -217,10 +218,12 @@ Partial Class Form1
         Me.Button5.Size = New System.Drawing.Size(72, 22)
         Me.Button5.TabIndex = 16
         Me.Button5.Text = "Refresh"
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button5.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.LinkLabel6)
         Me.GroupBox1.Controls.Add(Me.Button10)
         Me.GroupBox1.Controls.Add(Me.LinkLabel2)
         Me.GroupBox1.Controls.Add(Me.LinkLabel3)
@@ -232,9 +235,19 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Watch for Steem Account"
         '
+        'Button10
+        '
+        Me.Button10.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Button10.Location = New System.Drawing.Point(212, 22)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(95, 27)
+        Me.Button10.TabIndex = 12
+        Me.Button10.Text = "Mentions"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(207, 126)
+        Me.PictureBox5.Location = New System.Drawing.Point(207, 128)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(122, 87)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -309,12 +322,13 @@ Partial Class Form1
         '
         'Button7
         '
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(235, 47)
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(235, 23)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(72, 22)
         Me.Button7.TabIndex = 27
         Me.Button7.Text = "Update"
+        Me.Button7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button7.UseVisualStyleBackColor = True
         '
         'RichTextBox1
@@ -323,12 +337,12 @@ Partial Class Form1
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.3!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox1.ForeColor = System.Drawing.Color.DarkGray
-        Me.RichTextBox1.Location = New System.Drawing.Point(84, 581)
+        Me.RichTextBox1.Location = New System.Drawing.Point(76, 34)
         Me.RichTextBox1.Multiline = False
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
-        Me.RichTextBox1.Size = New System.Drawing.Size(150, 19)
+        Me.RichTextBox1.Size = New System.Drawing.Size(107, 19)
         Me.RichTextBox1.TabIndex = 29
         Me.RichTextBox1.Text = ""
         Me.RichTextBox1.ZoomFactor = 1.101!
@@ -339,12 +353,12 @@ Partial Class Form1
         Me.RichTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.3!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox2.ForeColor = System.Drawing.Color.DarkGray
-        Me.RichTextBox2.Location = New System.Drawing.Point(84, 558)
+        Me.RichTextBox2.Location = New System.Drawing.Point(76, 19)
         Me.RichTextBox2.Multiline = False
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RichTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
-        Me.RichTextBox2.Size = New System.Drawing.Size(150, 18)
+        Me.RichTextBox2.Size = New System.Drawing.Size(107, 18)
         Me.RichTextBox2.TabIndex = 30
         Me.RichTextBox2.Text = ""
         Me.RichTextBox2.ZoomFactor = 1.101!
@@ -352,13 +366,15 @@ Partial Class Form1
         'GroupBox5
         '
         Me.GroupBox5.BackColor = System.Drawing.Color.White
-        Me.GroupBox5.Controls.Add(Me.Button7)
-        Me.GroupBox5.Controls.Add(Me.PictureBox4)
         Me.GroupBox5.Controls.Add(Me.Label2)
         Me.GroupBox5.Controls.Add(Me.Label3)
+        Me.GroupBox5.Controls.Add(Me.Button7)
+        Me.GroupBox5.Controls.Add(Me.PictureBox4)
+        Me.GroupBox5.Controls.Add(Me.RichTextBox2)
+        Me.GroupBox5.Controls.Add(Me.RichTextBox1)
         Me.GroupBox5.Location = New System.Drawing.Point(12, 539)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(317, 71)
+        Me.GroupBox5.Size = New System.Drawing.Size(317, 61)
         Me.GroupBox5.TabIndex = 31
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Steem Price"
@@ -366,9 +382,9 @@ Partial Class Form1
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(248, 9)
+        Me.PictureBox4.Location = New System.Drawing.Point(5, 23)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(46, 37)
+        Me.PictureBox4.Size = New System.Drawing.Size(35, 28)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 17
         Me.PictureBox4.TabStop = False
@@ -378,7 +394,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkGray
-        Me.Label2.Location = New System.Drawing.Point(16, 21)
+        Me.Label2.Location = New System.Drawing.Point(39, 22)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(54, 15)
         Me.Label2.TabIndex = 28
@@ -389,7 +405,7 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkGray
-        Me.Label3.Location = New System.Drawing.Point(16, 47)
+        Me.Label3.Location = New System.Drawing.Point(39, 36)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 15)
         Me.Label3.TabIndex = 29
@@ -398,7 +414,7 @@ Partial Class Form1
         'Button8
         '
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button8.Location = New System.Drawing.Point(132, 16)
+        Me.Button8.Location = New System.Drawing.Point(132, 13)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(50, 23)
         Me.Button8.TabIndex = 34
@@ -412,10 +428,10 @@ Partial Class Form1
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.ForeColor = System.Drawing.Color.DarkGray
-        Me.TextBox1.Location = New System.Drawing.Point(11, 19)
+        Me.TextBox1.Location = New System.Drawing.Point(11, 16)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(111, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(111, 18)
         Me.TextBox1.TabIndex = 35
         '
         'GroupBox6
@@ -424,14 +440,14 @@ Partial Class Form1
         Me.GroupBox6.Controls.Add(Me.TextBox1)
         Me.GroupBox6.Location = New System.Drawing.Point(12, 121)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(189, 48)
+        Me.GroupBox6.Size = New System.Drawing.Size(189, 43)
         Me.GroupBox6.TabIndex = 36
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Steem Username"
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(132, 13)
+        Me.Button9.Location = New System.Drawing.Point(132, 21)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(50, 23)
         Me.Button9.TabIndex = 37
@@ -441,45 +457,50 @@ Partial Class Form1
         'ComboBox1
         '
         Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowText
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"A:", "B:", "C:", "D:", "E:", "F:", "G:", "H:", "I:", "J:", "K:", "L:", "M:", "N:", "O:", "P:", "Q:", "R:", "S:", "T:", "U:", "V:", "W:", "X:", "Y:", "Z:"})
-        Me.ComboBox1.Location = New System.Drawing.Point(97, 14)
+        Me.ComboBox1.Location = New System.Drawing.Point(18, 22)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(33, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(33, 23)
         Me.ComboBox1.TabIndex = 38
         '
         'GroupBox7
         '
-        Me.GroupBox7.Controls.Add(Me.ComboBox1)
-        Me.GroupBox7.Controls.Add(Me.Label5)
+        Me.GroupBox7.Controls.Add(Me.ComboBox2)
         Me.GroupBox7.Controls.Add(Me.Button9)
-        Me.GroupBox7.Location = New System.Drawing.Point(12, 170)
+        Me.GroupBox7.Controls.Add(Me.ComboBox1)
+        Me.GroupBox7.Location = New System.Drawing.Point(12, 166)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(189, 45)
+        Me.GroupBox7.Size = New System.Drawing.Size(189, 52)
         Me.GroupBox7.TabIndex = 39
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "USB Stick"
         '
-        'Label5
+        'ComboBox2
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.DarkGray
-        Me.Label5.Location = New System.Drawing.Point(39, 19)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(61, 13)
-        Me.Label5.TabIndex = 38
-        Me.Label5.Text = "Drive letter:"
+        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox2.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Short", "Medium", "Long"})
+        Me.ComboBox2.Location = New System.Drawing.Point(64, 21)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(56, 24)
+        Me.ComboBox2.TabIndex = 41
+        Me.ComboBox2.Text = "Blink"
         '
-        'Button10
+        'LinkLabel6
         '
-        Me.Button10.Location = New System.Drawing.Point(212, 22)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(95, 27)
-        Me.Button10.TabIndex = 12
-        Me.Button10.Text = "Mentions"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.LinkLabel6.AutoSize = True
+        Me.LinkLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel6.LinkColor = System.Drawing.Color.Silver
+        Me.LinkLabel6.Location = New System.Drawing.Point(248, 48)
+        Me.LinkLabel6.Name = "LinkLabel6"
+        Me.LinkLabel6.Size = New System.Drawing.Size(25, 13)
+        Me.LinkLabel6.TabIndex = 13
+        Me.LinkLabel6.TabStop = True
+        Me.LinkLabel6.Text = "Edit"
         '
         'Form1
         '
@@ -487,10 +508,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(341, 648)
-        Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
@@ -524,7 +543,6 @@ Partial Class Form1
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
         Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -565,7 +583,8 @@ Partial Class Form1
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button9 As Button
     Friend WithEvents GroupBox7 As GroupBox
-    Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Button10 As Button
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents LinkLabel6 As LinkLabel
 End Class

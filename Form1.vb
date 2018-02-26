@@ -40,10 +40,15 @@ Public Class Form1
 
 
 
-        ' load the drive and diplay it in textbox1
+        ' load the drive and diplay it in ComboBox1
 
         ComboBox1.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\drive.txt")
         ComboBox1.Text = CStr(ComboBox1.Tag)
+
+        ' load the blinklength set by the user and diplay it in ComboBox2
+
+        ComboBox2.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength.txt")
+        ComboBox2.Text = CStr(ComboBox2.Tag)
 
         ' load steemprice from coinmarketcap.com on startup
 
@@ -209,7 +214,7 @@ Public Class Form1
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Shell("c:\blinkit\bat\blink.bat")
         Shell("c:\blinkit\bat\steemprice.bat")
-        Threading.Thread.Sleep(4600) ' 500 milliseconds = 0.5 seconds
+        Threading.Thread.Sleep(8000) ' 500 milliseconds = 0.5 seconds
         RichTextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\steempricestriped.txt")
         RichTextBox1.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sbdpricestriped.txt")
         Shell("c:\blinkit\bat\blink.bat")
@@ -258,7 +263,7 @@ Public Class Form1
         Dim fileReader2 As String
         fileReader2 = My.Computer.FileSystem.ReadAllText("C:\blinkit\config\avatar.txt")
 
-        ' Update the Avatar picturebox when save is pressed 
+        ' Update the Avatar picturebox when Save is pressed 
         PictureBox5.Image = New System.Drawing.Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData(fileReader2)))
 
 
@@ -274,6 +279,7 @@ Public Class Form1
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         My.Computer.FileSystem.WriteAllText("c:\blinkit\config\drive.txt", ComboBox1.Text, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -287,5 +293,9 @@ Public Class Form1
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         Shell("c:\blinkit\bat\mentions.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+
     End Sub
 End Class
