@@ -39,6 +39,7 @@ Partial Class Form1
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -51,9 +52,9 @@ Partial Class Form1
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
@@ -61,7 +62,6 @@ Partial Class Form1
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -235,14 +235,26 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Watch for Steem Account"
         '
+        'LinkLabel6
+        '
+        Me.LinkLabel6.AutoSize = True
+        Me.LinkLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel6.LinkColor = System.Drawing.Color.Silver
+        Me.LinkLabel6.Location = New System.Drawing.Point(248, 48)
+        Me.LinkLabel6.Name = "LinkLabel6"
+        Me.LinkLabel6.Size = New System.Drawing.Size(25, 13)
+        Me.LinkLabel6.TabIndex = 13
+        Me.LinkLabel6.TabStop = True
+        Me.LinkLabel6.Text = "Edit"
+        '
         'Button10
         '
-        Me.Button10.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Button10.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button10.Location = New System.Drawing.Point(212, 22)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(95, 27)
         Me.Button10.TabIndex = 12
-        Me.Button10.Text = "Mentions"
+        Me.Button10.Text = "Posts"
         Me.Button10.UseVisualStyleBackColor = True
         '
         'PictureBox5
@@ -379,16 +391,6 @@ Partial Class Form1
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Steem Price"
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(5, 23)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(35, 28)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 17
-        Me.PictureBox4.TabStop = False
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -410,6 +412,16 @@ Partial Class Form1
         Me.Label3.Size = New System.Drawing.Size(35, 15)
         Me.Label3.TabIndex = 29
         Me.Label3.Text = "SBD"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(5, 23)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(35, 28)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 17
+        Me.PictureBox4.TabStop = False
         '
         'Button8
         '
@@ -489,18 +501,6 @@ Partial Class Form1
         Me.ComboBox2.Size = New System.Drawing.Size(56, 24)
         Me.ComboBox2.TabIndex = 41
         Me.ComboBox2.Text = "Blink"
-        '
-        'LinkLabel6
-        '
-        Me.LinkLabel6.AutoSize = True
-        Me.LinkLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel6.LinkColor = System.Drawing.Color.Silver
-        Me.LinkLabel6.Location = New System.Drawing.Point(248, 48)
-        Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(25, 13)
-        Me.LinkLabel6.TabIndex = 13
-        Me.LinkLabel6.TabStop = True
-        Me.LinkLabel6.Text = "Edit"
         '
         'Form1
         '

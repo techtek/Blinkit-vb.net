@@ -292,10 +292,14 @@ Public Class Form1
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        Shell("c:\blinkit\bat\mentions.bat", vbNormalFocus)
+        Shell("c:\blinkit\bat\posts.bat", vbNormalFocus)
     End Sub
 
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub LinkLabel6_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\posts.bat")
     End Sub
 End Class
