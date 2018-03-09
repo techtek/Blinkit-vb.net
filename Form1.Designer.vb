@@ -61,6 +61,9 @@ Partial Class Form1
         Me.Button9 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,13 +76,14 @@ Partial Class Form1
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
+        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(21, 249)
+        Me.Button1.Location = New System.Drawing.Point(23, 274)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(97, 27)
@@ -90,7 +94,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Button2.Location = New System.Drawing.Point(21, 315)
+        Me.Button2.Location = New System.Drawing.Point(21, 340)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(97, 26)
@@ -138,7 +142,7 @@ Partial Class Form1
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel2.LinkColor = System.Drawing.Color.Silver
-        Me.LinkLabel2.Location = New System.Drawing.Point(47, 48)
+        Me.LinkLabel2.Location = New System.Drawing.Point(49, 48)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(25, 13)
         Me.LinkLabel2.TabIndex = 9
@@ -149,7 +153,7 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(111, 22)
+        Me.Button4.Location = New System.Drawing.Point(113, 22)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(95, 27)
         Me.Button4.TabIndex = 10
@@ -161,7 +165,7 @@ Partial Class Form1
         Me.LinkLabel3.AutoSize = True
         Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel3.LinkColor = System.Drawing.Color.Silver
-        Me.LinkLabel3.Location = New System.Drawing.Point(147, 48)
+        Me.LinkLabel3.Location = New System.Drawing.Point(149, 48)
         Me.LinkLabel3.Name = "LinkLabel3"
         Me.LinkLabel3.Size = New System.Drawing.Size(25, 13)
         Me.LinkLabel3.TabIndex = 11
@@ -172,7 +176,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(146, 453)
+        Me.Label4.Location = New System.Drawing.Point(146, 472)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(0, 17)
         Me.Label4.TabIndex = 14
@@ -228,7 +232,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.LinkLabel2)
         Me.GroupBox1.Controls.Add(Me.LinkLabel3)
         Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 227)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 252)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(317, 67)
         Me.GroupBox1.TabIndex = 22
@@ -240,7 +244,7 @@ Partial Class Form1
         Me.LinkLabel6.AutoSize = True
         Me.LinkLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel6.LinkColor = System.Drawing.Color.Silver
-        Me.LinkLabel6.Location = New System.Drawing.Point(248, 48)
+        Me.LinkLabel6.Location = New System.Drawing.Point(250, 48)
         Me.LinkLabel6.Name = "LinkLabel6"
         Me.LinkLabel6.Size = New System.Drawing.Size(25, 13)
         Me.LinkLabel6.TabIndex = 13
@@ -250,7 +254,7 @@ Partial Class Form1
         'Button10
         '
         Me.Button10.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button10.Location = New System.Drawing.Point(212, 22)
+        Me.Button10.Location = New System.Drawing.Point(214, 22)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(95, 27)
         Me.Button10.TabIndex = 12
@@ -261,7 +265,7 @@ Partial Class Form1
         '
         Me.PictureBox5.Location = New System.Drawing.Point(207, 128)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(122, 87)
+        Me.PictureBox5.Size = New System.Drawing.Size(122, 111)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 40
         Me.PictureBox5.TabStop = False
@@ -272,7 +276,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.LinkLabel4)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Button6)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 296)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 321)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(317, 62)
         Me.GroupBox2.TabIndex = 23
@@ -316,7 +320,7 @@ Partial Class Form1
         '
         Me.GroupBox3.Controls.Add(Me.Button5)
         Me.GroupBox3.Controls.Add(Me.ListView1)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 367)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 386)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(317, 167)
         Me.GroupBox3.TabIndex = 24
@@ -384,7 +388,7 @@ Partial Class Form1
         Me.GroupBox5.Controls.Add(Me.PictureBox4)
         Me.GroupBox5.Controls.Add(Me.RichTextBox2)
         Me.GroupBox5.Controls.Add(Me.RichTextBox1)
-        Me.GroupBox5.Location = New System.Drawing.Point(12, 539)
+        Me.GroupBox5.Location = New System.Drawing.Point(12, 558)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(317, 61)
         Me.GroupBox5.TabIndex = 31
@@ -425,10 +429,11 @@ Partial Class Form1
         '
         'Button8
         '
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button8.Location = New System.Drawing.Point(132, 13)
+        Me.Button8.Location = New System.Drawing.Point(139, 13)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(50, 23)
+        Me.Button8.Size = New System.Drawing.Size(45, 21)
         Me.Button8.TabIndex = 34
         Me.Button8.Text = "Save"
         Me.Button8.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -437,6 +442,7 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TextBox1.AutoCompleteCustomSource.AddRange(New String() {"techtek"})
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.ForeColor = System.Drawing.Color.DarkGray
@@ -459,11 +465,13 @@ Partial Class Form1
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(132, 21)
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(139, 47)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(50, 23)
+        Me.Button9.Size = New System.Drawing.Size(45, 21)
         Me.Button9.TabIndex = 37
         Me.Button9.Text = "Save"
+        Me.Button9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button9.UseVisualStyleBackColor = True
         '
         'ComboBox1
@@ -473,30 +481,67 @@ Partial Class Form1
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowText
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"A:", "B:", "C:", "D:", "E:", "F:", "G:", "H:", "I:", "J:", "K:", "L:", "M:", "N:", "O:", "P:", "Q:", "R:", "S:", "T:", "U:", "V:", "W:", "X:", "Y:", "Z:"})
-        Me.ComboBox1.Location = New System.Drawing.Point(18, 22)
+        Me.ComboBox1.Location = New System.Drawing.Point(75, 47)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(33, 23)
         Me.ComboBox1.TabIndex = 38
         '
         'GroupBox7
         '
-        Me.GroupBox7.Controls.Add(Me.ComboBox2)
-        Me.GroupBox7.Controls.Add(Me.Button9)
         Me.GroupBox7.Controls.Add(Me.ComboBox1)
+        Me.GroupBox7.Controls.Add(Me.Label5)
+        Me.GroupBox7.Controls.Add(Me.Label1)
+        Me.GroupBox7.Controls.Add(Me.Button9)
+        Me.GroupBox7.Controls.Add(Me.TrackBar1)
         Me.GroupBox7.Location = New System.Drawing.Point(12, 166)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(189, 52)
+        Me.GroupBox7.Size = New System.Drawing.Size(189, 73)
         Me.GroupBox7.TabIndex = 39
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "USB Stick"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label5.Location = New System.Drawing.Point(13, 51)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(65, 15)
+        Me.Label5.TabIndex = 42
+        Me.Label5.Text = "Drive letter"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Label1.Location = New System.Drawing.Point(120, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 15)
+        Me.Label1.TabIndex = 42
+        Me.Label1.Text = "Blink length"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'TrackBar1
+        '
+        Me.TrackBar1.AutoSize = False
+        Me.TrackBar1.BackColor = System.Drawing.SystemColors.Window
+        Me.TrackBar1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.TrackBar1.Location = New System.Drawing.Point(5, 18)
+        Me.TrackBar1.Margin = New System.Windows.Forms.Padding(1)
+        Me.TrackBar1.Name = "TrackBar1"
+        Me.TrackBar1.Size = New System.Drawing.Size(183, 29)
+        Me.TrackBar1.TabIndex = 41
+        Me.TrackBar1.TickFrequency = 10
         '
         'ComboBox2
         '
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox2.ForeColor = System.Drawing.Color.Black
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Short", "Medium", "Long"})
-        Me.ComboBox2.Location = New System.Drawing.Point(64, 21)
+        Me.ComboBox2.Items.AddRange(New Object() {"Blink", "Short", "Medium", "Long", "Longer"})
+        Me.ComboBox2.Location = New System.Drawing.Point(436, 197)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(56, 24)
         Me.ComboBox2.TabIndex = 41
@@ -507,8 +552,8 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(341, 648)
-        Me.Controls.Add(Me.PictureBox5)
+        Me.ClientSize = New System.Drawing.Size(340, 648)
+        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -520,6 +565,7 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox5)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -543,6 +589,8 @@ Partial Class Form1
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
         Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -587,4 +635,7 @@ Partial Class Form1
     Friend WithEvents Button10 As Button
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents LinkLabel6 As LinkLabel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label1 As Label
+    Public WithEvents TrackBar1 As TrackBar
 End Class

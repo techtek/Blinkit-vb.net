@@ -50,6 +50,11 @@ Public Class Form1
         ComboBox2.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength.txt")
         ComboBox2.Text = CStr(ComboBox2.Tag)
 
+        ' load the blinklength set by the user and diplay it in ComboBox2
+
+        ' TrackBar1.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength.txt")
+        ' TrackBar1.Value = CStr(TrackBar1.Tag)
+
         ' load steemprice from coinmarketcap.com on startup
 
         Shell("c:\blinkit\bat\steemprice.bat")
@@ -212,7 +217,6 @@ Public Class Form1
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Shell("c:\blinkit\bat\blink.bat")
         Shell("c:\blinkit\bat\steemprice.bat")
         Threading.Thread.Sleep(8000) ' 500 milliseconds = 0.5 seconds
         RichTextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\steempricestriped.txt")
@@ -279,7 +283,9 @@ Public Class Form1
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         My.Computer.FileSystem.WriteAllText("c:\blinkit\config\drive.txt", ComboBox1.Text, False, System.Text.Encoding.ASCII)
-        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
+        ' My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength.txt", TrackBar1.Value, False, System.Text.Encoding.ASCII)
+
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -301,5 +307,13 @@ Public Class Form1
 
     Private Sub LinkLabel6_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
         System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\posts.bat")
+    End Sub
+
+    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
+
+    End Sub
+
+    Private Sub Label5_Click_2(sender As Object, e As EventArgs) Handles Label5.Click
+
     End Sub
 End Class
