@@ -45,23 +45,126 @@ Public Class Form1
         ComboBox1.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\drive.txt")
         ComboBox1.Text = CStr(ComboBox1.Tag)
 
-        ' load the blinklength set by the user and diplay it in ComboBox2
-
-        ComboBox2.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength.txt")
+        ComboBox2.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\drive2.txt")
         ComboBox2.Text = CStr(ComboBox2.Tag)
 
-        ' load the blinklength set by the user and diplay it in ComboBox2
+        ComboBox3.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\drive3.txt")
+        ComboBox3.Text = CStr(ComboBox3.Tag)
 
-        ' TrackBar1.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength.txt")
-        ' TrackBar1.Value = CStr(TrackBar1.Tag)
 
-        ' load steemprice from coinmarketcap.com on startup
+        ' load the drive and diplay it in TrackBar1
 
-        Shell("c:\blinkit\bat\steemprice.bat")
+        TrackBar1.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength.txt")
+        TrackBar1.Value = CStr(TrackBar1.Tag)
+
+        TrackBar2.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength2.txt")
+        TrackBar2.Value = CStr(TrackBar2.Tag)
+
+        TrackBar3.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength3.txt")
+        TrackBar3.Value = CStr(TrackBar3.Tag)
+
+
+        ' load the by the user selected color of the stick's LED and display the color in a textbox
+        ' USBSTICK 1
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Green" Then
+            RichTextBox4.BackColor = Color.Green
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Blue" Then
+            RichTextBox4.BackColor = Color.Blue
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Yellow" Then
+            RichTextBox4.BackColor = Color.Yellow
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Orange" Then
+            RichTextBox4.BackColor = Color.Orange
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Red" Then
+            RichTextBox4.BackColor = Color.Red
+        End If
+
+        ' USBSTICK 2
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Green" Then
+            RichTextBox5.BackColor = Color.Green
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Blue" Then
+            RichTextBox5.BackColor = Color.Blue
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Yellow" Then
+            RichTextBox5.BackColor = Color.Yellow
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Orange" Then
+            RichTextBox5.BackColor = Color.Orange
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Red" Then
+            RichTextBox5.BackColor = Color.Red
+        End If
+
+
+
+        ' USBSTICK 3
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Green" Then
+            RichTextBox8.BackColor = Color.Green
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Blue" Then
+            RichTextBox8.BackColor = Color.Blue
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Yellow" Then
+            RichTextBox8.BackColor = Color.Yellow
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Orange" Then
+            RichTextBox8.BackColor = Color.Orange
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Red" Then
+            RichTextBox8.BackColor = Color.Red
+        End If
+
+
+
+
+        ' download and display the coin price from coinmarketcap.com on startup
+
+        Shell("c:\blinkit\bat\coinprice.bat")
         Threading.Thread.Sleep(4600) ' 500 milliseconds = 0.5 seconds
         RichTextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\steempricestriped.txt")
         RichTextBox1.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sbdpricestriped.txt")
+        RichTextBox6.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1pricestriped.txt")
+        RichTextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2pricestriped.txt")
         Shell("c:\blinkit\bat\blink.bat")
+
+        GroupBox11.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1.txt")
+        TextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1.txt")
+
+        GroupBox9.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2.txt")
+        TextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2.txt")
+
+
+        ' Get coin icon URL and put it in "icon1url"
+        Dim icon1url As String
+        icon1url = My.Computer.FileSystem.ReadAllText("C:\blinkit\config\pricepreset1iconurl.txt")
+
+        ' Update the picturebox with the saved coin icon
+        PictureBox2.Image = New System.Drawing.Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData(icon1url)))
+
+
+        ' Get coin icon URL and put it in "icon2url"
+        Dim icon2url As String
+        icon2url = My.Computer.FileSystem.ReadAllText("C:\blinkit\config\pricepreset2iconurl.txt")
+
+        ' Update the picturebox when Save is pressed 
+        PictureBox3.Image = New System.Drawing.Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData(icon2url)))
+
 
 
         ListView1.Items.Clear()
@@ -217,11 +320,36 @@ Public Class Form1
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Shell("c:\blinkit\bat\steemprice.bat")
-        Threading.Thread.Sleep(8000) ' 500 milliseconds = 0.5 seconds
-        RichTextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\steempricestriped.txt")
-        RichTextBox1.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sbdpricestriped.txt")
-        Shell("c:\blinkit\bat\blink.bat")
+
+
+
+
+
+
+        ' Download Coin prices
+        Shell("c:\blinkit\bat\coinprice.bat")
+            Threading.Thread.Sleep(5000) ' 500 milliseconds = 0.5 seconds
+            ' RichTextBox2.Text = "Updating..."
+            ' RichTextBox1.Text = "Updating..."
+            Shell("c:\blinkit\bat\coinprice.bat")
+            Threading.Thread.Sleep(5000) ' 500 milliseconds = 0.5 seconds
+
+            RichTextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\steempricestriped.txt")
+            RichTextBox1.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sbdpricestriped.txt")
+        RichTextBox6.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1pricestriped.txt")
+        RichTextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2pricestriped.txt")
+
+        ' update the labels of the presets with the saved data from pricepresets1.txt
+        GroupBox11.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1.txt")
+        TextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1.txt")
+
+        GroupBox9.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2.txt")
+        TextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2.txt")
+
+
+
+
+
     End Sub
 
     Private Sub TextBox1_TextChanged_1(sender As Object, e As EventArgs)
@@ -285,6 +413,33 @@ Public Class Form1
         My.Computer.FileSystem.WriteAllText("c:\blinkit\config\drive.txt", ComboBox1.Text, False, System.Text.Encoding.ASCII)
         ' My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
         My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength.txt", TrackBar1.Value, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\usbstick1color.txt", ComboBox4.Text, False, System.Text.Encoding.ASCII)
+
+
+        ' load the by the user selected color of the stick's LED and display the color in a textbox
+        ' USBSTICK 1
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Green" Then
+            RichTextBox4.BackColor = Color.Green
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Blue" Then
+            RichTextBox4.BackColor = Color.Blue
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Yellow" Then
+            RichTextBox4.BackColor = Color.Yellow
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Orange" Then
+            RichTextBox4.BackColor = Color.Orange
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick1color.txt") = "Red" Then
+            RichTextBox4.BackColor = Color.Red
+        End If
+
+
+
 
     End Sub
 
@@ -301,9 +456,7 @@ Public Class Form1
         Shell("c:\blinkit\bat\posts.bat", vbNormalFocus)
     End Sub
 
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
 
-    End Sub
 
     Private Sub LinkLabel6_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
         System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\posts.bat")
@@ -316,4 +469,244 @@ Public Class Form1
     Private Sub Label5_Click_2(sender As Object, e As EventArgs) Handles Label5.Click
 
     End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        '
+
+        If Label6.Text = "View More" Then
+            Label6.Text = "View Less"
+            Me.Size = New System.Drawing.Size(820, 695)
+
+        ElseIf Label6.Text = "View Less" Then
+            Label6.Text = "View More"
+            Me.Size = New System.Drawing.Size(356, 695)
+
+        End If
+
+
+
+
+
+    End Sub
+
+
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+
+        ' Save the coin  from the textBox to pricepreset1price.txt
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\pricepreset1.txt", TextBox2.Text, False, System.Text.Encoding.ASCII)
+
+
+        ' Download Coin prices
+        Shell("c:\blinkit\bat\coinprice.bat")
+        Threading.Thread.Sleep(8000) ' 500 milliseconds = 0.5 seconds
+        Shell("c:\blinkit\bat\coinprice.bat")
+        Threading.Thread.Sleep(2000) ' 500 milliseconds = 0.5 seconds
+        RichTextBox6.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1pricestriped.txt")
+        RichTextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2pricestriped.txt")
+
+        ' update the labels of the presets with the saved data from pricepresets1.txt
+        GroupBox11.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1.txt")
+        TextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1.txt")
+
+        GroupBox9.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2.txt")
+        TextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2.txt")
+
+
+        ' Make URL to get the coin icon
+        Shell("c:\blinkit\bat\coinpreset1iconurl.bat")
+
+        ' Sleep 3 second to let the files update
+        Threading.Thread.Sleep(3000) ' 3000 milliseconds = 3.0 seconds
+
+        ' Get coin icon URL and put it in "icon1url"
+        Dim icon1url As String
+        icon1url = My.Computer.FileSystem.ReadAllText("C:\blinkit\config\pricepreset1iconurl.txt")
+
+        ' Update the picturebox when Save is pressed 
+        PictureBox2.Image = New System.Drawing.Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData(icon1url)))
+
+
+
+
+    End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        Shell("c:\blinkit\bat\blink2.bat")
+    End Sub
+
+    Private Sub Button16_Click_1(sender As Object, e As EventArgs) Handles Button16.Click
+        Shell("c:\blinkit\bat\blink3.bat")
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\drive2.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
+        ' My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength2.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength2.txt", TrackBar2.Value, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\usbstick2color.txt", ComboBox5.Text, False, System.Text.Encoding.ASCII)
+
+        ' load the by the user selected color of the stick's LED and display the color in a textbox
+        ' USBSTICK 2
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Green" Then
+            RichTextBox5.BackColor = Color.Green
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Blue" Then
+            RichTextBox5.BackColor = Color.Blue
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Yellow" Then
+            RichTextBox5.BackColor = Color.Yellow
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Orange" Then
+            RichTextBox5.BackColor = Color.Orange
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick2color.txt") = "Red" Then
+            RichTextBox5.BackColor = Color.Red
+        End If
+
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\drive3.txt", ComboBox3.Text, False, System.Text.Encoding.ASCII)
+        ' My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength3.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklength3.txt", TrackBar3.Value, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\usbstick3color.txt", ComboBox6.Text, False, System.Text.Encoding.ASCII)
+
+        ' load the by the user selected color of the stick's LED and display the color in a textbox
+        ' USBSTICK 3
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Green" Then
+            RichTextBox8.BackColor = Color.Green
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Blue" Then
+            RichTextBox8.BackColor = Color.Blue
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Yellow" Then
+            RichTextBox8.BackColor = Color.Yellow
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Orange" Then
+            RichTextBox8.BackColor = Color.Orange
+        End If
+
+        If My.Computer.FileSystem.ReadAllText("c:\blinkit\config\usbstick3color.txt") = "Red" Then
+            RichTextBox8.BackColor = Color.Red
+        End If
+
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+
+        ' Save the coin  from the textBox to pricepreset1price.txt
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\pricepreset2.txt", TextBox3.Text, False, System.Text.Encoding.ASCII)
+
+
+        ' Download Coin prices
+        Shell("c:\blinkit\bat\coinprice.bat")
+        Threading.Thread.Sleep(8000) ' 500 milliseconds = 0.5 seconds
+        Shell("c:\blinkit\bat\coinprice.bat")
+        Threading.Thread.Sleep(2000) ' 500 milliseconds = 0.5 seconds
+        RichTextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2pricestriped.txt")
+
+        ' update the labels of the presets with the saved data from pricepresets1.txt
+        GroupBox11.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1.txt")
+        TextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1.txt")
+
+        GroupBox9.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2.txt")
+        TextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2.txt")
+        Shell("c:\blinkit\bat\blink.bat")
+
+        ' Make URL to get the coin icon
+        Shell("c:\blinkit\bat\coinpreset2iconurl.bat")
+
+        ' Sleep 3 second to let the files update
+        Threading.Thread.Sleep(3000) ' 3000 milliseconds = 3.0 seconds
+
+        ' Get coin icon URL and put it in "icon2url"
+        Dim icon2url As String
+        icon2url = My.Computer.FileSystem.ReadAllText("C:\blinkit\config\pricepreset2iconurl.txt")
+
+        ' Update the picturebox when Save is pressed 
+        PictureBox3.Image = New System.Drawing.Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData(icon2url)))
+
+
+
+    End Sub
+
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        Shell("c:\blinkit\bat\upvotes2.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        Shell("c:\blinkit\bat\upvotes3.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+        Shell("c:\blinkit\bat\followers2.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        Shell("c:\blinkit\bat\followers3.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        Shell("c:\blinkit\bat\posts2.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+        Shell("c:\blinkit\bat\posts3.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub LinkLabel9_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel9.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\upvotes2.bat")
+    End Sub
+
+    Private Sub LinkLabel14_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel14.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\upvotes3.bat")
+    End Sub
+
+    Private Sub LinkLabel10_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel10.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\followers2.bat")
+    End Sub
+
+    Private Sub LinkLabel12_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel12.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\followers3.bat")
+    End Sub
+
+    Private Sub LinkLabel11_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel11.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\posts2.bat")
+    End Sub
+
+    Private Sub LinkLabel13_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel13.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\posts3.bat")
+    End Sub
+
+    Private Sub LinkLabel8_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel8.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\blink2.bat")
+    End Sub
+
+    Private Sub LinkLabel7_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel7.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\blink3.bat")
+    End Sub
 End Class
+
+
+
+
+
