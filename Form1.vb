@@ -52,7 +52,7 @@ Public Class Form1
         ComboBox3.Text = CStr(ComboBox3.Tag)
 
 
-        ' load the drive and diplay it in TrackBar1
+        ' load the blinklength and diplay it in TrackBar
 
         TrackBar1.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength.txt")
         TrackBar1.Value = CStr(TrackBar1.Tag)
@@ -62,6 +62,9 @@ Public Class Form1
 
         TrackBar3.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklength3.txt")
         TrackBar3.Value = CStr(TrackBar3.Tag)
+
+        TrackBar4.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklengthsonoff.txt")
+        TrackBar4.Value = CStr(TrackBar4.Tag)
 
 
         ' load the by the user selected color of the stick's LED and display the color in a textbox
@@ -130,7 +133,8 @@ Public Class Form1
             RichTextBox8.BackColor = Color.Red
         End If
 
-
+        ' Display the saved sonoff ip in the textbox
+        TextBox4.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sonoffip.txt")
 
 
         ' download and display the coin price from coinmarketcap.com on startup
@@ -703,6 +707,41 @@ Public Class Form1
 
     Private Sub LinkLabel7_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel7.LinkClicked
         System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\blink3.bat")
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Shell("c:\blinkit\bat\sound.bat")
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\sound.txt", ComboBox7.Text, False, System.Text.Encoding.ASCII)
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        Me.WebBrowser1.Navigate("http://192.168.178.200/cm?cmnd=power%20on")
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\sonoffip.txt", TextBox4.Text, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklengthsonoff.txt", TrackBar4.Value, False, System.Text.Encoding.ASCII)
+
+
+    End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        Shell("c:\blinkit\bat\blinksonoff.bat")
+    End Sub
+
+    Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+        Me.WebBrowser1.Navigate("http://192.168.178.200/cm?cmnd=power%20off")
+    End Sub
+
+    Private Sub LinkLabel15_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel15.LinkClicked
+        System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\blinksonoff.bat")
+    End Sub
+
+    Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+        Shell("c:\blinkit\bat\postssonoff.bat")
     End Sub
 End Class
 

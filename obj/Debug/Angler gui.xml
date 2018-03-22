@@ -22,5 +22,20 @@ Angler gui
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Angler_gui.My.Resources.Resources.Sonoff">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Angler_gui.My.Resources.Resources.Sonoffsmallicon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Angler_gui.My.Resources.Resources.Sonoffsmallicongrey">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
