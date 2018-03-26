@@ -136,6 +136,8 @@ Public Class Form1
         ' Display the saved sonoff ip in the textbox
         TextBox4.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sonoffip.txt")
 
+        ' Display the saved notification sound in 
+        ComboBox7.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sound.txt")
 
         ' download and display the coin price from coinmarketcap.com on startup
 
@@ -240,7 +242,7 @@ Public Class Form1
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Shell("c:\blinkit\bat\blink.bat")
-        Shell("c:\blinkit\bat\bleep.bat")
+        Shell("c:\blinkit\bat\sound.bat")
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs)
@@ -314,8 +316,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
-        Shell("c:\blinkit\bat\bleep.bat")
+        Shell("c:\blinkit\bat\sound.bat")
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
@@ -710,6 +711,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\sound.txt", ComboBox7.Text, False, System.Text.Encoding.ASCII)
         Shell("c:\blinkit\bat\sound.bat")
     End Sub
 
@@ -724,7 +726,6 @@ Public Class Form1
     Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
         My.Computer.FileSystem.WriteAllText("c:\blinkit\config\sonoffip.txt", TextBox4.Text, False, System.Text.Encoding.ASCII)
         My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklengthsonoff.txt", TrackBar4.Value, False, System.Text.Encoding.ASCII)
-
 
     End Sub
 
@@ -741,7 +742,31 @@ Public Class Form1
     End Sub
 
     Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
-        Shell("c:\blinkit\bat\postssonoff.bat")
+        Shell("c:\blinkit\bat\postssonoff.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+        Shell("c:\blinkit\bat\upvotessonoff.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
+        Shell("c:\blinkit\bat\followerssonoff.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button33_Click(sender As Object, e As EventArgs) Handles Button33.Click
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\soundsetting.txt", Button33.Text, False, System.Text.Encoding.ASCII)
+    End Sub
+
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\soundsetting.txt", Button32.Text, False, System.Text.Encoding.ASCII)
+    End Sub
+
+    Private Sub ComboBox7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox7.SelectedIndexChanged
+
     End Sub
 End Class
 

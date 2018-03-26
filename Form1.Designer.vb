@@ -53,6 +53,7 @@ Partial Class Form1
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
@@ -72,6 +73,7 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.RichTextBox6 = New System.Windows.Forms.RichTextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -109,45 +111,46 @@ Partial Class Form1
         Me.LinkLabel14 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox17 = New System.Windows.Forms.GroupBox()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
         Me.GroupBox10 = New System.Windows.Forms.GroupBox()
         Me.Button25 = New System.Windows.Forms.Button()
         Me.GroupBox18 = New System.Windows.Forms.GroupBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button26 = New System.Windows.Forms.Button()
-        Me.Button27 = New System.Windows.Forms.Button()
-        Me.Button28 = New System.Windows.Forms.Button()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
-        Me.TrackBar4 = New System.Windows.Forms.TrackBar()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel15 = New System.Windows.Forms.LinkLabel()
+        Me.Button27 = New System.Windows.Forms.Button()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Button31 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
         Me.Button30 = New System.Windows.Forms.Button()
-        Me.Button31 = New System.Windows.Forms.Button()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TrackBar4 = New System.Windows.Forms.TrackBar()
+        Me.Button26 = New System.Windows.Forms.Button()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Button28 = New System.Windows.Forms.Button()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button24 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.Button32 = New System.Windows.Forms.Button()
+        Me.Button33 = New System.Windows.Forms.Button()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox8.SuspendLayout()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox11.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox13.SuspendLayout()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox14.SuspendLayout()
@@ -155,12 +158,10 @@ Partial Class Form1
         Me.GroupBox16.SuspendLayout()
         Me.GroupBox17.SuspendLayout()
         Me.GroupBox9.SuspendLayout()
-        Me.GroupBox18.SuspendLayout()
-        CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox18.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox12.SuspendLayout()
@@ -494,6 +495,16 @@ Partial Class Form1
         Me.Label3.TabIndex = 29
         Me.Label3.Text = "SBD"
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(5, 23)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(35, 28)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 17
+        Me.PictureBox4.TabStop = False
+        '
         'Button8
         '
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -716,6 +727,15 @@ Partial Class Form1
         Me.GroupBox11.TabIndex = 46
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "Preset1"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Location = New System.Drawing.Point(4, 25)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(29, 27)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 63
+        Me.PictureBox2.TabStop = False
         '
         'RichTextBox6
         '
@@ -1140,6 +1160,15 @@ Partial Class Form1
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Preset2"
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Location = New System.Drawing.Point(2, 25)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(31, 27)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 63
+        Me.PictureBox3.TabStop = False
+        '
         'RichTextBox3
         '
         Me.RichTextBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -1194,74 +1223,15 @@ Partial Class Form1
         Me.GroupBox18.TabIndex = 68
         Me.GroupBox18.TabStop = False
         '
-        'TextBox4
+        'PictureBox6
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.ForeColor = System.Drawing.Color.DarkGray
-        Me.TextBox4.Location = New System.Drawing.Point(32, 55)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(107, 15)
-        Me.TextBox4.TabIndex = 68
-        '
-        'Button26
-        '
-        Me.Button26.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button26.Location = New System.Drawing.Point(138, 51)
-        Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(45, 21)
-        Me.Button26.TabIndex = 69
-        Me.Button26.Text = "Save"
-        Me.Button26.UseVisualStyleBackColor = True
-        '
-        'Button27
-        '
-        Me.Button27.Location = New System.Drawing.Point(7, 76)
-        Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(111, 23)
-        Me.Button27.TabIndex = 70
-        Me.Button27.Text = "Blink"
-        Me.Button27.UseVisualStyleBackColor = True
-        '
-        'Button28
-        '
-        Me.Button28.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button28.Location = New System.Drawing.Point(151, 76)
-        Me.Button28.Name = "Button28"
-        Me.Button28.Size = New System.Drawing.Size(32, 22)
-        Me.Button28.TabIndex = 71
-        Me.Button28.Text = "Off"
-        Me.Button28.UseVisualStyleBackColor = True
-        '
-        'WebBrowser1
-        '
-        Me.WebBrowser1.Location = New System.Drawing.Point(579, 505)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.ScrollBarsEnabled = False
-        Me.WebBrowser1.Size = New System.Drawing.Size(187, 63)
-        Me.WebBrowser1.TabIndex = 69
-        Me.WebBrowser1.Url = New System.Uri("", System.UriKind.Relative)
-        '
-        'TrackBar4
-        '
-        Me.TrackBar4.AutoSize = False
-        Me.TrackBar4.Location = New System.Drawing.Point(3, 23)
-        Me.TrackBar4.Name = "TrackBar4"
-        Me.TrackBar4.Size = New System.Drawing.Size(183, 29)
-        Me.TrackBar4.TabIndex = 70
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Label10.Location = New System.Drawing.Point(129, 10)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(51, 15)
-        Me.Label10.TabIndex = 62
-        Me.Label10.Text = "On: sec."
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox6.Image = Global.Angler_gui.My.Resources.Resources.Sonoffsmallicongrey
+        Me.PictureBox6.Location = New System.Drawing.Point(9, 0)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(63, 18)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 70
+        Me.PictureBox6.TabStop = False
         '
         'LinkLabel15
         '
@@ -1275,6 +1245,38 @@ Partial Class Form1
         Me.LinkLabel15.TabIndex = 68
         Me.LinkLabel15.TabStop = True
         Me.LinkLabel15.Text = "Edit "
+        '
+        'Button27
+        '
+        Me.Button27.Location = New System.Drawing.Point(7, 76)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(111, 23)
+        Me.Button27.TabIndex = 70
+        Me.Button27.Text = "Blink"
+        Me.Button27.UseVisualStyleBackColor = True
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label14.Location = New System.Drawing.Point(12, 55)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(21, 15)
+        Me.Label14.TabIndex = 62
+        Me.Label14.Text = "IP:"
+        '
+        'Button31
+        '
+        Me.Button31.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button31.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button31.Location = New System.Drawing.Point(7, 116)
+        Me.Button31.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button31.Name = "Button31"
+        Me.Button31.Size = New System.Drawing.Size(59, 27)
+        Me.Button31.TabIndex = 72
+        Me.Button31.Text = "Upvotes"
+        Me.Button31.UseVisualStyleBackColor = False
         '
         'Button29
         '
@@ -1297,66 +1299,65 @@ Partial Class Form1
         Me.Button30.Text = "Followers"
         Me.Button30.UseVisualStyleBackColor = True
         '
-        'Button31
+        'Label10
         '
-        Me.Button31.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Button31.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button31.Location = New System.Drawing.Point(7, 116)
-        Me.Button31.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(59, 27)
-        Me.Button31.TabIndex = 72
-        Me.Button31.Text = "Upvotes"
-        Me.Button31.UseVisualStyleBackColor = False
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Label10.Location = New System.Drawing.Point(129, 10)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(51, 15)
+        Me.Label10.TabIndex = 62
+        Me.Label10.Text = "On: sec."
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'Label14
+        'TrackBar4
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label14.Location = New System.Drawing.Point(12, 55)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(21, 15)
-        Me.Label14.TabIndex = 62
-        Me.Label14.Text = "IP:"
+        Me.TrackBar4.AutoSize = False
+        Me.TrackBar4.Location = New System.Drawing.Point(3, 23)
+        Me.TrackBar4.Name = "TrackBar4"
+        Me.TrackBar4.Size = New System.Drawing.Size(183, 29)
+        Me.TrackBar4.TabIndex = 70
         '
-        'PictureBox6
+        'Button26
         '
-        Me.PictureBox6.Image = Global.Angler_gui.My.Resources.Resources.Sonoffsmallicongrey
-        Me.PictureBox6.Location = New System.Drawing.Point(9, 0)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(63, 18)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 70
-        Me.PictureBox6.TabStop = False
+        Me.Button26.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button26.Location = New System.Drawing.Point(138, 51)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(45, 21)
+        Me.Button26.TabIndex = 69
+        Me.Button26.Text = "Save"
+        Me.Button26.UseVisualStyleBackColor = True
         '
-        'PictureBox3
+        'TextBox4
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(2, 25)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 63
-        Me.PictureBox3.TabStop = False
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.ForeColor = System.Drawing.Color.DarkGray
+        Me.TextBox4.Location = New System.Drawing.Point(32, 55)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(107, 15)
+        Me.TextBox4.TabIndex = 68
         '
-        'PictureBox2
+        'Button28
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(4, 25)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(29, 27)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 63
-        Me.PictureBox2.TabStop = False
+        Me.Button28.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button28.Location = New System.Drawing.Point(151, 76)
+        Me.Button28.Name = "Button28"
+        Me.Button28.Size = New System.Drawing.Size(32, 22)
+        Me.Button28.TabIndex = 71
+        Me.Button28.Text = "Off"
+        Me.Button28.UseVisualStyleBackColor = True
         '
-        'PictureBox4
+        'WebBrowser1
         '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(5, 23)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(35, 28)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 17
-        Me.PictureBox4.TabStop = False
+        Me.WebBrowser1.Location = New System.Drawing.Point(579, 505)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.ScrollBarsEnabled = False
+        Me.WebBrowser1.Size = New System.Drawing.Size(187, 63)
+        Me.WebBrowser1.TabIndex = 69
+        Me.WebBrowser1.Url = New System.Uri("", System.UriKind.Relative)
         '
         'PictureBox1
         '
@@ -1380,8 +1381,9 @@ Partial Class Form1
         '
         'ComboBox7
         '
+        Me.ComboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Items.AddRange(New Object() {"SpaceGlitters.wav", "SpaceTrumpet.wav", "Bel.wav"})
+        Me.ComboBox7.Items.AddRange(New Object() {"SpaceGlitters.wav", "ToasterDing.wav", "Succession.wav", "DripEcho.wav", "UserPreset1.wav", "UserPreset2.wav"})
         Me.ComboBox7.Location = New System.Drawing.Point(10, 23)
         Me.ComboBox7.Name = "ComboBox7"
         Me.ComboBox7.Size = New System.Drawing.Size(127, 24)
@@ -1390,7 +1392,7 @@ Partial Class Form1
         'Button13
         '
         Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(141, 23)
+        Me.Button13.Location = New System.Drawing.Point(141, 22)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(42, 22)
         Me.Button13.TabIndex = 65
@@ -1400,37 +1402,46 @@ Partial Class Form1
         'Button24
         '
         Me.Button24.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button24.Location = New System.Drawing.Point(141, 45)
+        Me.Button24.Location = New System.Drawing.Point(141, 44)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(42, 22)
         Me.Button24.TabIndex = 67
         Me.Button24.Text = "Save"
         Me.Button24.UseVisualStyleBackColor = True
         '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.ForeColor = System.Drawing.Color.Silver
-        Me.CheckBox1.Location = New System.Drawing.Point(10, 53)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(61, 19)
-        Me.CheckBox1.TabIndex = 68
-        Me.CheckBox1.Text = "On/off"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'GroupBox12
         '
-        Me.GroupBox12.Controls.Add(Me.CheckBox1)
+        Me.GroupBox12.Controls.Add(Me.Button32)
+        Me.GroupBox12.Controls.Add(Me.Button33)
         Me.GroupBox12.Controls.Add(Me.Button24)
         Me.GroupBox12.Controls.Add(Me.Button13)
         Me.GroupBox12.Controls.Add(Me.ComboBox7)
-        Me.GroupBox12.Location = New System.Drawing.Point(832, 444)
+        Me.GroupBox12.Location = New System.Drawing.Point(356, 418)
         Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(189, 83)
+        Me.GroupBox12.Size = New System.Drawing.Size(189, 78)
         Me.GroupBox12.TabIndex = 66
         Me.GroupBox12.TabStop = False
         Me.GroupBox12.Text = "Notification Sound"
+        '
+        'Button32
+        '
+        Me.Button32.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button32.Location = New System.Drawing.Point(40, 49)
+        Me.Button32.Name = "Button32"
+        Me.Button32.Size = New System.Drawing.Size(32, 19)
+        Me.Button32.TabIndex = 74
+        Me.Button32.Text = "Off"
+        Me.Button32.UseVisualStyleBackColor = True
+        '
+        'Button33
+        '
+        Me.Button33.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button33.Location = New System.Drawing.Point(9, 49)
+        Me.Button33.Name = "Button33"
+        Me.Button33.Size = New System.Drawing.Size(31, 19)
+        Me.Button33.TabIndex = 73
+        Me.Button33.Text = "On"
+        Me.Button33.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -1488,6 +1499,7 @@ Partial Class Form1
         Me.GroupBox4.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
         Me.GroupBox7.ResumeLayout(False)
@@ -1497,6 +1509,7 @@ Partial Class Form1
         Me.GroupBox8.PerformLayout()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox11.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox13.ResumeLayout(False)
         Me.GroupBox13.PerformLayout()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1509,17 +1522,14 @@ Partial Class Form1
         Me.GroupBox17.ResumeLayout(False)
         Me.GroupBox17.PerformLayout()
         Me.GroupBox9.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox18.ResumeLayout(False)
         Me.GroupBox18.PerformLayout()
-        CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox12.ResumeLayout(False)
-        Me.GroupBox12.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1634,8 +1644,9 @@ Partial Class Form1
     Friend WithEvents Label14 As Label
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents GroupBox12 As GroupBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Button24 As Button
     Friend WithEvents Button13 As Button
     Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents Button32 As Button
+    Friend WithEvents Button33 As Button
 End Class
