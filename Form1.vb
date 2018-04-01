@@ -66,6 +66,9 @@ Public Class Form1
         TrackBar4.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklengthsonoff.txt")
         TrackBar4.Value = CStr(TrackBar4.Tag)
 
+        TrackBar5.Tag = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\blinklengthphilipshue.txt")
+        TrackBar5.Value = CStr(TrackBar5.Tag)
+
 
         ' load the by the user selected color of the stick's LED and display the color in a textbox
         ' USBSTICK 1
@@ -135,6 +138,12 @@ Public Class Form1
 
         ' Display the saved sonoff ip in the textbox
         TextBox4.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sonoffip.txt")
+
+        ' Display the saved philips hue ip and id in the textboxes
+        TextBox5.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\philipshueip.txt")
+        TextBox6.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\philipshueid.txt")
+
+
 
         ' Display the saved notification sound in 
         ComboBox7.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sound.txt")
@@ -333,14 +342,14 @@ Public Class Form1
 
         ' Download Coin prices
         Shell("c:\blinkit\bat\coinprice.bat")
-            Threading.Thread.Sleep(5000) ' 500 milliseconds = 0.5 seconds
-            ' RichTextBox2.Text = "Updating..."
-            ' RichTextBox1.Text = "Updating..."
-            Shell("c:\blinkit\bat\coinprice.bat")
-            Threading.Thread.Sleep(5000) ' 500 milliseconds = 0.5 seconds
+        Threading.Thread.Sleep(5000) ' 500 milliseconds = 0.5 seconds
+        ' RichTextBox2.Text = "Updating..."
+        ' RichTextBox1.Text = "Updating..."
+        Shell("c:\blinkit\bat\coinprice.bat")
+        Threading.Thread.Sleep(5000) ' 500 milliseconds = 0.5 seconds
 
-            RichTextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\steempricestriped.txt")
-            RichTextBox1.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sbdpricestriped.txt")
+        RichTextBox2.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\steempricestriped.txt")
+        RichTextBox1.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\sbdpricestriped.txt")
         RichTextBox6.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset1pricestriped.txt")
         RichTextBox3.Text = My.Computer.FileSystem.ReadAllText("c:\blinkit\config\pricepreset2pricestriped.txt")
 
@@ -737,7 +746,7 @@ Public Class Form1
         Me.WebBrowser1.Navigate("http://192.168.178.200/cm?cmnd=power%20off")
     End Sub
 
-    Private Sub LinkLabel15_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel15.LinkClicked
+    Private Sub LinkLabel15_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
         System.Diagnostics.Process.Start("notepad.exe", "c:\blinkit\bat\blinksonoff.bat")
     End Sub
 
@@ -767,6 +776,36 @@ Public Class Form1
 
     Private Sub ComboBox7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox7.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
+        Shell("c:\blinkit\bat\blinkphilipshue.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button37_Click(sender As Object, e As EventArgs) Handles Button37.Click
+        Shell("c:\blinkit\bat\upvotesphilipshue.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button39_Click(sender As Object, e As EventArgs) Handles Button39.Click
+        Shell("c:\blinkit\bat\followersphilipshue.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button38_Click(sender As Object, e As EventArgs) Handles Button38.Click
+        Shell("c:\blinkit\bat\postsphilipshue.bat", vbNormalFocus)
+    End Sub
+
+    Private Sub Button40_Click(sender As Object, e As EventArgs) Handles Button40.Click
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\philipshueip.txt", TextBox5.Text, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\philipshueid.txt", TextBox6.Text, False, System.Text.Encoding.ASCII)
+        My.Computer.FileSystem.WriteAllText("c:\blinkit\config\blinklengthphilipshue.txt", TrackBar5.Value, False, System.Text.Encoding.ASCII)
+    End Sub
+
+    Private Sub Button36_Click(sender As Object, e As EventArgs) Handles Button36.Click
+        Shell("c:\blinkit\bat\philipshuegreen.exe", vbNormalFocus)
+    End Sub
+
+    Private Sub Button35_Click(sender As Object, e As EventArgs) Handles Button35.Click
+        Shell("c:\blinkit\bat\philipshueoff.exe", vbNormalFocus)
     End Sub
 End Class
 
