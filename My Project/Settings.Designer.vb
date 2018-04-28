@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
 
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")> _
-        Friend ReadOnly Property Settings() As Global.Angler_gui.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Blinkit.My.MySettings
             Get
-                Return Global.Angler_gui.My.MySettings.Default
+                Return Global.Blinkit.My.MySettings.Default
             End Get
         End Property
     End Module

@@ -1,0 +1,17 @@
+c:\users\stefan\source\repos\Blinkit\Blinkit\bin\Debug\Blinkit.exe.config
+c:\users\stefan\source\repos\Blinkit\Blinkit\bin\Debug\Blinkit.exe
+c:\users\stefan\source\repos\Blinkit\Blinkit\bin\Debug\Blinkit.pdb
+c:\users\stefan\source\repos\Blinkit\Blinkit\bin\Debug\Blinkit.xml
+c:\users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.Resources.resources
+c:\users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.vbproj.GenerateResource.Cache
+c:\users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.vbproj.CoreCompileInputs.cache
+c:\users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.exe
+c:\users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.xml
+c:\users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.pdb
+c:\users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.vbprojResolveAssemblyReference.cache
+C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.MainForm.resources
+C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.UsbForm.resources
+C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.SonoffForm.resources
+C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.ArduinoForm.resources
+C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.PhilipshueForm.resources
+C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.LogitechForm.resources

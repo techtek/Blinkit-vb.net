@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Angler gui")>
+<Assembly: AssemblyTitle("Blinkit")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Angler gui")>
-<Assembly: AssemblyCopyright("Copyright ©  2017")>
+<Assembly: AssemblyProduct("Blinkit")>
+<Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("9f44d3bf-acc3-4169-8821-81c4ecfb414c")>
+<Assembly: Guid("2d67a401-c7b0-469a-bcdf-77ba64e4444a")>
 
 ' Version information for an assembly consists of the following four values:
 '
