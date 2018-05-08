@@ -121,23 +121,11 @@
   <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="21366-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\21366-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ButtonUSB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonUSB1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SONOFF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SONOFF1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ButtonSteem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonSteem.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sonoffbasic1op" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sonoffbasic1op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Basic_02-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Basic_02-500x500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,8 +136,8 @@
   <data name="ButtonArduino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonArduino.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backround-051" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backround-051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonUSBclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonUSBclicked.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logophilipshue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logophilipshue.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +145,8 @@
   <data name="LogoUSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoUSB.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arduino-uno-1024x797" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arduino-uno-1024x797.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="background_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_51.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,17 +163,11 @@
   <data name="ButtonSteemnova" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonSteemnova.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LEDdiy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LEDdiy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backround-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backround-05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ButtonR11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonR11.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh-grey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh-grey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ARDUINO_UNO_A06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ARDUINO_UNO_A06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonB1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,17 +181,14 @@
   <data name="ButtonSteempunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonSteempunk.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="philipshue8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\philipshue8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sonoffbasic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sonoffbasic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonUSBclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonUSBclicked.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SonoffLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SonoffLogo.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sonoffbasic2op" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sonoffbasic2op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoArduino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoArduino.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,10 +202,10 @@
   <data name="ButtonBlinkit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonBlinkit.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Blinkitlogo-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blinkitlogo-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backround-051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backround-051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="philipshue8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\philipshue8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="120700-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\120700-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

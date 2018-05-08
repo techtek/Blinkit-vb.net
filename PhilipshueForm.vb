@@ -42,7 +42,7 @@
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
         ' Test Blink the Philips Hue Light
-        Shell("bat\blinkphilipshue.bat")
+        Shell("blinkphilipshue.bat")
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked

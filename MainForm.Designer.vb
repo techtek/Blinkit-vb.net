@@ -76,7 +76,7 @@ Partial Class MainForm
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.Transparent
-        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonB1
+        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonArduino
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
@@ -223,7 +223,7 @@ Partial Class MainForm
         Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(0)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LinkLabel1.Size = New System.Drawing.Size(59, 16)
+        Me.LinkLabel1.Size = New System.Drawing.Size(63, 17)
         Me.LinkLabel1.TabIndex = 21
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "@techtek"
@@ -232,7 +232,7 @@ Partial Class MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Blinkit.My.Resources.Resources.backround_051
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(502, 753)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Button2)

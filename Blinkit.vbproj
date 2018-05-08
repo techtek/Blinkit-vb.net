@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArduinoConsoleForm.Designer.vb">
+      <DependentUpon>ArduinoConsoleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArduinoConsoleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,11 @@
     </Compile>
     <Compile Include="LogitechForm.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="UsbForm.Designer.vb">
       <DependentUpon>UsbForm.vb</DependentUpon>
@@ -108,11 +119,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -133,6 +139,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ArduinoConsoleForm.resx">
+      <DependentUpon>ArduinoConsoleForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -150,9 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ArduinoForm.resx">
       <DependentUpon>ArduinoForm.vb</DependentUpon>
@@ -171,22 +180,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Blinkitlogo-01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\21366-200.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backround-05.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LEDdiy.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\_120700_200.png" />
     <None Include="Resources\ButtonR1.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backround-051.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ButtonUSB.JPG" />
@@ -220,16 +215,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\philipshue8.png" />
-    <None Include="Resources\sonoffbasic2op.png" />
     <None Include="Resources\sonoffbasic1op.png" />
     <None Include="Resources\sonoffbasic1.png" />
-    <None Include="Resources\SONOFF1.png" />
     <None Include="Resources\refresh-grey.png" />
     <None Include="Resources\Logo.png" />
     <None Include="Resources\ButtonLogitech.JPG" />
     <None Include="Resources\Basic_02-500x500.png" />
-    <None Include="Resources\arduino-uno-1024x797.png" />
     <None Include="Resources\a89665eaee8c31a35870996951cb9388.png" />
+    <None Include="Resources\ARDUINO_UNO_A06.png" />
+    <None Include="Resources\120700-200.png" />
+    <Content Include="Resources\21366-200.png" />
+    <None Include="Resources\backround-051.png" />
     <Content Include="Resources\ButtonArduinoclicked.JPG" />
     <None Include="Resources\ButtonB1.JPG" />
     <None Include="Resources\ButtonSteempunk.JPG" />

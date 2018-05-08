@@ -15,3 +15,4 @@ C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.SonoffForm.resour
 C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.ArduinoForm.resources
 C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.PhilipshueForm.resources
 C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.LogitechForm.resources
+C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.ArduinoConsoleForm.resources

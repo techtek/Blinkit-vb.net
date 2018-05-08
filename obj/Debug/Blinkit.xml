@@ -22,7 +22,7 @@ Blinkit
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:Blinkit.My.Resources.Resources._21366_200">
+<member name="P:Blinkit.My.Resources.Resources._120700_200">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -32,27 +32,17 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Blinkit.My.Resources.Resources.arduino_uno_1024x797">
+<member name="P:Blinkit.My.Resources.Resources.ARDUINO_UNO_A06">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Blinkit.My.Resources.Resources.backround_05">
+<member name="P:Blinkit.My.Resources.Resources.background_51">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Blinkit.My.Resources.Resources.backround_051">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Blinkit.My.Resources.Resources.Basic_02_500x500">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Blinkit.My.Resources.Resources.Blinkitlogo_01">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -142,11 +132,6 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Blinkit.My.Resources.Resources.LEDdiy">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Blinkit.My.Resources.Resources.Logo">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -172,32 +157,12 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Blinkit.My.Resources.Resources.refresh_grey">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Blinkit.My.Resources.Resources.Settings">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Blinkit.My.Resources.Resources.SONOFF1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Blinkit.My.Resources.Resources.sonoffbasic1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Blinkit.My.Resources.Resources.sonoffbasic1op">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Blinkit.My.Resources.Resources.sonoffbasic2op">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
