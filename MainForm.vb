@@ -75,11 +75,11 @@
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        ' Show the Logitech form
-        LogitechForm.Show()
-        LogitechForm.BringToFront()
+        ' Show the Webcam form
+        WebcamForm.Show()
+        WebcamForm.BringToFront()
 
-        ' Hide the main form when the Arduino screen is shown
+        ' Hide the main form when the Webcam screen is shown
         Me.Hide()
     End Sub
 

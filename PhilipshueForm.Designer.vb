@@ -70,6 +70,7 @@ Partial Class PhilipshueForm
         'ComboBox4
         '
         Me.ComboBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox4.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox4.ForeColor = System.Drawing.Color.White
@@ -95,6 +96,7 @@ Partial Class PhilipshueForm
         'ComboBox6
         '
         Me.ComboBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox6.DropDownWidth = 150
         Me.ComboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox6.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -105,7 +107,6 @@ Partial Class PhilipshueForm
         Me.ComboBox6.Name = "ComboBox6"
         Me.ComboBox6.Size = New System.Drawing.Size(205, 28)
         Me.ComboBox6.TabIndex = 49
-        Me.ComboBox6.Text = "Steem Account Upvotes"
         '
         'Label6
         '
@@ -418,6 +419,7 @@ Partial Class PhilipshueForm
         'ComboBox7
         '
         Me.ComboBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox7.Font = New System.Drawing.Font("Myriad Pro", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox7.ForeColor = System.Drawing.Color.White

@@ -16,3 +16,4 @@ C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.ArduinoForm.resou
 C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.PhilipshueForm.resources
 C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.LogitechForm.resources
 C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.ArduinoConsoleForm.resources
+C:\Users\stefan\source\repos\Blinkit\Blinkit\obj\Debug\Blinkit.WebcamForm.resources

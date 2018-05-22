@@ -27,7 +27,7 @@
         ' Display the saved notification sound in ComboBox7
         ComboBox7.Text = My.Computer.FileSystem.ReadAllText("config\sound.txt")
 
-
+        ComboBox6.Text = "Steem Account Upvotes"
 
     End Sub
 
@@ -204,5 +204,13 @@
 
     Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
         My.Computer.FileSystem.WriteAllText("config\soundsetting.txt", Button32.Text, False, System.Text.Encoding.ASCII)
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
     End Sub
 End Class

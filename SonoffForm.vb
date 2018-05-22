@@ -25,6 +25,9 @@
         ' Display the saved notification sound in ComboBox7
         ComboBox7.Text = My.Computer.FileSystem.ReadAllText("config\sound.txt")
 
+        ' display the default action
+        ComboBox6.Text = "Steem Account Upvotes"
+
     End Sub
 
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -119,7 +119,7 @@ Partial Class ArduinoConsoleForm
         Me.Controls.Add(Me.BtnSend)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ArduinoConsoleForm"
-        Me.Text = "Blikit - Arduino Console"
+        Me.Text = "Blinkit - Arduino Console"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -166,7 +166,7 @@ Partial Class MainForm
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.Color.White
-        Me.Button8.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonB1
+        Me.Button8.BackgroundImage = Global.Blinkit.My.Resources.Resources.Buttonwebcam
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.White

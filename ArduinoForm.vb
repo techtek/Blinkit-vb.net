@@ -3,12 +3,17 @@
 Public Class ArduinoForm
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
     End Sub
 
     Private Sub Form5_Closing(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
         MainForm.Show()
         MainForm.BringToFront()
+
     End Sub
+
+
+
 
     Dim WithEvents SerialPort As New IO.Ports.SerialPort
 
@@ -25,6 +30,7 @@ Public Class ArduinoForm
     End Sub
 
     Sub New()
+
 
         ' This call is required by the designer.
         InitializeComponent()
@@ -70,29 +76,103 @@ Public Class ArduinoForm
         ' Display the saved mode
         If My.Computer.FileSystem.ReadAllText("config\arduinomode.txt") = "m1" Then
             ComboBox3.Text = "3x Single colour LED"
+
+        ElseIf My.Computer.FileSystem.ReadAllText("config\arduinomode.txt") = "m2" Then
+            ComboBox3.Text = "1x RGB LED"
         End If
 
-        If My.Computer.FileSystem.ReadAllText("config\arduinomode.txt") = "m2" Then
-            ComboBox3.Text = "3x RGB LED"
+        ' Display the saved RGB colour for LED 1
+
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U0 U255 U0" Then
+            ComboBox6.Text = "Green"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U0 U0 U255" Then
+            ComboBox6.Text = "Blue"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U255 U0 U0" Then
+            ComboBox6.Text = "Red"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U255 U20 U0" Then
+            ComboBox6.Text = "Orange"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U0 U255 U255" Then
+            ComboBox6.Text = "Aqua"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U255 U90 U0" Then
+            ComboBox6.Text = "Yellow"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U45 U0 U130" Then
+            ComboBox6.Text = "Violet"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U150 U0 U100" Then
+            ComboBox6.Text = "Pink"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt") = "U180 U90 U90" Then
+            ComboBox6.Text = "White"
         End If
 
 
+        ' Display the saved RGB colour for LED 2
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F0 F255 F0" Then
+            ComboBox8.Text = "Green"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F0 F0 F255" Then
+            ComboBox8.Text = "Blue"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F255 F0 F0" Then
+            ComboBox8.Text = "Red"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F255 F20 F0" Then
+            ComboBox8.Text = "Orange"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F0 F255 F255" Then
+            ComboBox8.Text = "Aqua"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F255 F90 F0" Then
+            ComboBox8.Text = "Yellow"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F45 F0 F130" Then
+            ComboBox8.Text = "Violet"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F150 F0 F100" Then
+            ComboBox8.Text = "Pink"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt") = "F180 F90 F90" Then
+            ComboBox8.Text = "White"
+        End If
 
 
+        ' Display the saved RGB colour for LED 3
+
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P0 P255 P0" Then
+            ComboBox11.Text = "Green"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P0 P0 P255" Then
+            ComboBox11.Text = "Blue"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P255 P0 P0" Then
+            ComboBox11.Text = "Red"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P255 P20 P0" Then
+            ComboBox11.Text = "Orange"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P0 P255 P255" Then
+            ComboBox11.Text = "Aqua"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P255 P90 P0" Then
+            ComboBox11.Text = "Yellow"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P45 P0 P130" Then
+            ComboBox11.Text = "Violet"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P150 P0 P100" Then
+            ComboBox11.Text = "Pink"
+        End If
+        If My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt") = "P180 P90 P90" Then
+            ComboBox11.Text = "White"
+        End If
 
 
-    End Sub
-
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub ComboBox5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox5.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 
@@ -122,11 +202,42 @@ Public Class ArduinoForm
             My.Computer.FileSystem.WriteAllText("config\arduinomode.txt", "m1", False, System.Text.Encoding.ASCII)
         End If
 
-        If ComboBox3.Text = "3x RGB LED" Then
+        If ComboBox3.Text = "1x RGB LED" Then
             My.Computer.FileSystem.WriteAllText("config\arduinomode.txt", "m2", False, System.Text.Encoding.ASCII)
         End If
 
+        ' Save the blink colour for led1 in config file arduinoblinkcolourled1.txt
+        If ComboBox6.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U255 U0", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U0 U255", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U0 U0", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U20 U0", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U90 U0", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U45 U0 U130", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U150 U0 U100", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U255 U255", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U180 U90 U90", False, System.Text.Encoding.ASCII)
 
+        ' Save the blink colour for led2 in config file arduinoblinkcolourled2.txt
+        If ComboBox8.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F255 F0", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F0 F255", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F0 F0", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F20 F0", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F90 F0", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F45 F0 F130", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F150 F0 F100", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F255 F255", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F180 F90 F90", False, System.Text.Encoding.ASCII)
+
+        ' Save the blink colour for led3 in config file arduinoblinkcolourled3.txt
+        If ComboBox11.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P255 P0", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P0 P255", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P0 P0", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P20 P0", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P90 P0", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P45 P0 P130", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P150 P0 P100", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P255 P255", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P180 P90 P905", False, System.Text.Encoding.ASCII)
 
         ' Save the number of blinks for led1 in config file arduinonumberofblinksled1.txt
         My.Computer.FileSystem.WriteAllText("config\arduinonumberofblinksled1.txt", ComboBox4.Text, False, System.Text.Encoding.ASCII)
@@ -157,10 +268,9 @@ Public Class ArduinoForm
 
 
 
-
-
         ' Sleep 3 second to let the files update
         Threading.Thread.Sleep(3000) ' 3000 milliseconds = 3.0 seconds
+
 
         ' Send the mode to the Arduino / it is done two times because the Arduino can have issues when the first command is send 
         Shell("arduinomode.exe")
@@ -173,7 +283,6 @@ Public Class ArduinoForm
 
         ' Sleep 1 second to let the files update
         Threading.Thread.Sleep(3000) ' 1000 milliseconds = 1.0 seconds
-
 
 
 
@@ -207,6 +316,7 @@ Public Class ArduinoForm
 
 
 
+
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
@@ -220,22 +330,97 @@ Public Class ArduinoForm
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Shell("upvotesarduino.bat", vbNormalFocus)
 
+        ' Save the blink colour for led1 in config file arduinoblinkcolourled1.txt
+        If ComboBox6.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U255 U0", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U0 U255", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U0 U0", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U20 U0", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U90 U0", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U45 U0 U130", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U150 U0 U100", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U255 U255", False, System.Text.Encoding.ASCII)
+        If ComboBox6.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U180 U90 U90", False, System.Text.Encoding.ASCII)
+
+        ' Sleep 1 second to let the files update
+        Threading.Thread.Sleep(1500) ' 1000 milliseconds = 1.0 seconds
+
+        ' send the RGB colours to Arduino led1
+        Dim blinkcolourled1 As String = My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt")
+
+        My.Computer.FileSystem.WriteAllText("config\arduinocommand.txt", blinkcolourled1, False, System.Text.Encoding.ASCII)
+
+        ' Send the command to the Arduino
+        Shell("arduinosendcommand.exe")
+
+        ' Sleep 1.5 second to let the files update
+        Threading.Thread.Sleep(1500) ' 1500 milliseconds = 1.5 seconds
+
+        Shell("upvotesarduino.bat", vbNormalFocus)
 
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+
+        ' Save the blink colour for led2 in config file arduinoblinkcolourled2.txt
+        If ComboBox8.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F255 F0", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F0 F255", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F0 F0", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F20 F0", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F90 F0", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F45 F0 F130", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F150 F0 F100", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F255 F255", False, System.Text.Encoding.ASCII)
+        If ComboBox8.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F180 F90 F90", False, System.Text.Encoding.ASCII)
+
+        ' Sleep 1 second to let the files update
+        Threading.Thread.Sleep(1500) ' 1000 milliseconds = 1.0 seconds
+
+        ' send the RGB colours to Arduino led2
+        Dim blinkcolourled2 As String = My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt")
+
+        My.Computer.FileSystem.WriteAllText("config\arduinocommand.txt", blinkcolourled2, False, System.Text.Encoding.ASCII)
+
+        ' Send the command to the Arduino
+        Shell("arduinosendcommand.exe")
+
+        ' Sleep 1.5 second to let the files update
+        Threading.Thread.Sleep(1500) ' 1500 milliseconds = 1.5 seconds
+
         Shell("followersarduino.bat", vbNormalFocus)
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+
+        ' Save the blink colour for led3 in config file arduinoblinkcolourled3.txt
+        If ComboBox11.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P255 P0", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P0 P255", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P0 P0", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P20 P0", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P90 P0", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P45 P0 P130", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P150 P0 P100", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P255 P255", False, System.Text.Encoding.ASCII)
+        If ComboBox11.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P180 P90 P905", False, System.Text.Encoding.ASCII)
+
+        ' Sleep 1 second to let the files update
+        Threading.Thread.Sleep(1500) ' 1000 milliseconds = 1.0 seconds
+
+        ' send the RGB colours to Arduino led3
+        Dim blinkcolourled3 As String = My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt")
+
+        My.Computer.FileSystem.WriteAllText("config\arduinocommand.txt", blinkcolourled3, False, System.Text.Encoding.ASCII)
+
+        ' Send the command to the Arduino
+        Shell("arduinosendcommand.exe")
+
+        ' Sleep 1.5 second to let the files update
+        Threading.Thread.Sleep(1500) ' 1500 milliseconds = 1.5 seconds
+
         Shell("postsarduino.bat", vbNormalFocus)
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
 
-    End Sub
 
     Private Sub Button33_Click(sender As Object, e As EventArgs) Handles Button33.Click
         My.Computer.FileSystem.WriteAllText("config\soundsetting.txt", Button33.Text, False, System.Text.Encoding.ASCII)
@@ -247,46 +432,190 @@ Public Class ArduinoForm
         My.Computer.FileSystem.WriteAllText("config\soundsetting.txt", Button32.Text, False, System.Text.Encoding.ASCII)
     End Sub
 
+
+
     Private Sub LinkLabel6_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
-        If SerialPort.IsOpen Then
-            SerialPort.Write("u")
 
-            SerialPort.Close()
-        Else
-            ConnectSerial()
-            SerialPort.Write("u")
+        If ComboBox3.Text = "3x Single colour LED" Then
 
-            SerialPort.Close()
+            If SerialPort.IsOpen Then
+                SerialPort.Write("u")
+
+                SerialPort.Close()
+            Else
+                ConnectSerial()
+                SerialPort.Write("u")
+
+                SerialPort.Close()
+            End If
+
+
         End If
 
+        Dim colour() As String = {""}
 
+        If ComboBox3.Text = "1x RGB LED" Then
 
+            ' Save the blink colour for led1 in config file arduinoblinkcolourled1.txt
+            If ComboBox6.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U255 U0", False, System.Text.Encoding.ASCII)
+            If ComboBox6.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U0 U255", False, System.Text.Encoding.ASCII)
+            If ComboBox6.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U0 U0", False, System.Text.Encoding.ASCII)
+            If ComboBox6.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U20 U0", False, System.Text.Encoding.ASCII)
+            If ComboBox6.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U255 U90 U0", False, System.Text.Encoding.ASCII)
+            If ComboBox6.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U45 U0 U130", False, System.Text.Encoding.ASCII)
+            If ComboBox6.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U150 U0 U100", False, System.Text.Encoding.ASCII)
+            If ComboBox6.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U0 U255 U255", False, System.Text.Encoding.ASCII)
+            If ComboBox6.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled1.txt", "U180 U90 U90", False, System.Text.Encoding.ASCII)
+
+            Dim blinkcolourled1 As String = My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled1.txt")
+
+            If SerialPort.IsOpen Then
+                SerialPort.Write(blinkcolourled1)
+                Threading.Thread.Sleep(500)
+                SerialPort.Write("u")
+                SerialPort.Close()
+            Else
+                ConnectSerial()
+                SerialPort.Write(blinkcolourled1)
+                Threading.Thread.Sleep(500)
+                SerialPort.Write("u")
+                SerialPort.Close()
+            End If
+
+        End If
     End Sub
 
 
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
 
-    Private Sub ArduinoForm_Closing(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
 
-        SerialPort.Close()
+        If ComboBox3.Text = "3x Single colour LED" Then
+
+            If SerialPort.IsOpen Then
+                SerialPort.Write("f")
+
+                SerialPort.Close()
+            Else
+                ConnectSerial()
+                SerialPort.Write("f")
+
+                SerialPort.Close()
+            End If
+        End If
+
+        Dim colour() As String = {""}
+
+        If ComboBox3.Text = "1x RGB LED" Then
+
+            ' Save the blink colour for led2 in config file arduinoblinkcolourled2.txt
+            If ComboBox8.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F255 F0", False, System.Text.Encoding.ASCII)
+            If ComboBox8.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F0 F255", False, System.Text.Encoding.ASCII)
+            If ComboBox8.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F0 F0", False, System.Text.Encoding.ASCII)
+            If ComboBox8.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F20 F0", False, System.Text.Encoding.ASCII)
+            If ComboBox8.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F255 F90 F0", False, System.Text.Encoding.ASCII)
+            If ComboBox8.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F45 F0 F130", False, System.Text.Encoding.ASCII)
+            If ComboBox8.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F150 F0 F100", False, System.Text.Encoding.ASCII)
+            If ComboBox8.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F0 F255 F255", False, System.Text.Encoding.ASCII)
+            If ComboBox8.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled2.txt", "F180 F90 F90", False, System.Text.Encoding.ASCII)
+
+
+            Dim blinkcolourled2 As String = My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled2.txt")
+
+
+            If SerialPort.IsOpen Then
+                SerialPort.Write(blinkcolourled2)
+                Threading.Thread.Sleep(500)
+                SerialPort.Write("f")
+                SerialPort.Close()
+            Else
+                ConnectSerial()
+                SerialPort.Write(blinkcolourled2)
+                Threading.Thread.Sleep(500)
+                SerialPort.Write("f")
+                SerialPort.Close()
+            End If
+
+        End If
+
 
     End Sub
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
 
-    End Sub
 
-    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
-        If SerialPort.IsOpen Then
-            SerialPort.Write("p")
+        If ComboBox3.Text = "3x Single colour LED" Then
 
-            SerialPort.Close()
-        Else
-            ConnectSerial()
-            SerialPort.Write("p")
+            If SerialPort.IsOpen Then
+                SerialPort.Write("p")
 
-            SerialPort.Close()
+                SerialPort.Close()
+            Else
+                ConnectSerial()
+                SerialPort.Write("p")
+
+                SerialPort.Close()
+            End If
+
+
         End If
 
 
+        If ComboBox3.Text = "1x RGB LED" Then
+
+            Dim colour() As String = {""}
+
+            ' Save the blink colour for led3 in config file arduinoblinkcolourled3.txt
+            If ComboBox11.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P255 P0", False, System.Text.Encoding.ASCII)
+            If ComboBox11.Text = "Blue" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P0 P255", False, System.Text.Encoding.ASCII)
+            If ComboBox11.Text = "Red" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P0 P0", False, System.Text.Encoding.ASCII)
+            If ComboBox11.Text = "Orange" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P20 P0", False, System.Text.Encoding.ASCII)
+            If ComboBox11.Text = "Yellow" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P255 P90 P0", False, System.Text.Encoding.ASCII)
+            If ComboBox11.Text = "Violet" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P45 P0 P130", False, System.Text.Encoding.ASCII)
+            If ComboBox11.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P150 P0 P100", False, System.Text.Encoding.ASCII)
+            If ComboBox11.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P0 P255 P255", False, System.Text.Encoding.ASCII)
+            If ComboBox11.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\arduinoblinkcolourled3.txt", "P180 P90 P905", False, System.Text.Encoding.ASCII)
+
+            Dim blinkcolourled3 As String = My.Computer.FileSystem.ReadAllText("config\arduinoblinkcolourled3.txt")
+
+
+            If SerialPort.IsOpen Then
+                SerialPort.Write(blinkcolourled3)
+                Threading.Thread.Sleep(500)
+                SerialPort.Write("p")
+                SerialPort.Close()
+            Else
+                ConnectSerial()
+                SerialPort.Write(blinkcolourled3)
+                Threading.Thread.Sleep(500)
+                SerialPort.Write("p")
+                SerialPort.Close()
+            End If
+
+        End If
+
     End Sub
+
+
+    Private Sub ComboBox3_Textchange(sender As Object, e As EventArgs) Handles ComboBox3.TextChanged
+        If ComboBox3.Text = "3x Single colour LED" Then
+            ComboBox6.Visible = False
+            ComboBox8.Visible = False
+            ComboBox11.Visible = False
+            Label18.Visible = False
+            Label19.Visible = False
+            Label20.Visible = False
+
+
+        ElseIf ComboBox3.Text = "1x RGB LED" Then
+            ComboBox6.Visible = True
+            ComboBox8.Visible = True
+            ComboBox11.Visible = True
+            Label18.Visible = True
+            Label19.Visible = True
+            Label20.Visible = True
+
+        End If
+    End Sub
+
+
 End Class

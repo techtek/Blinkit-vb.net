@@ -136,14 +136,17 @@
   <data name="ButtonArduino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonArduino.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonUSBclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonUSBclicked.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backround-051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backround-051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logophilipshue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logophilipshue.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoUSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoUSB.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="webcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\webcam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background_51.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +190,8 @@
   <data name="sonoffbasic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sonoffbasic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SonoffLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SonoffLogo.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonUSBclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonUSBclicked.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoArduino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoArduino.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,10 +205,16 @@
   <data name="ButtonBlinkit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonBlinkit.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backround-051" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backround-051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Buttonwebcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonwebcam.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SonoffLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SonoffLogo.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="120700-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\120700-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hd-webcam-c310-gallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hd-webcam-c310-gallery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

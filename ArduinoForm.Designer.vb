@@ -74,6 +74,12 @@ Partial Class ArduinoForm
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox11 = New System.Windows.Forms.ComboBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -134,7 +140,7 @@ Partial Class ArduinoForm
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(76, 458)
+        Me.Label1.Location = New System.Drawing.Point(76, 453)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(69, 18)
         Me.Label1.TabIndex = 29
@@ -143,6 +149,7 @@ Partial Class ArduinoForm
         'ComboBox1
         '
         Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox1.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.ForeColor = System.Drawing.Color.White
@@ -156,12 +163,13 @@ Partial Class ArduinoForm
         'ComboBox4
         '
         Me.ComboBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox4.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox4.ForeColor = System.Drawing.Color.White
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"})
-        Me.ComboBox4.Location = New System.Drawing.Point(164, 456)
+        Me.ComboBox4.Location = New System.Drawing.Point(164, 451)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(83, 28)
         Me.ComboBox4.TabIndex = 27
@@ -172,7 +180,7 @@ Partial Class ArduinoForm
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(76, 495)
+        Me.Label2.Location = New System.Drawing.Point(76, 490)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(76, 18)
         Me.Label2.TabIndex = 33
@@ -181,12 +189,13 @@ Partial Class ArduinoForm
         'ComboBox5
         '
         Me.ComboBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox5.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox5.ForeColor = System.Drawing.Color.White
         Me.ComboBox5.FormattingEnabled = True
         Me.ComboBox5.Items.AddRange(New Object() {"30", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
-        Me.ComboBox5.Location = New System.Drawing.Point(164, 490)
+        Me.ComboBox5.Location = New System.Drawing.Point(164, 483)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(83, 28)
         Me.ComboBox5.TabIndex = 32
@@ -206,6 +215,7 @@ Partial Class ArduinoForm
         'ComboBox2
         '
         Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox2.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.ForeColor = System.Drawing.Color.White
@@ -224,7 +234,7 @@ Partial Class ArduinoForm
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Myriad Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Transparent
-        Me.Button4.Location = New System.Drawing.Point(34, 558)
+        Me.Button4.Location = New System.Drawing.Point(34, 551)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(213, 35)
         Me.Button4.TabIndex = 37
@@ -234,12 +244,13 @@ Partial Class ArduinoForm
         'ComboBox3
         '
         Me.ComboBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.DropDownWidth = 150
         Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox3.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3.ForeColor = System.Drawing.Color.White
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"3x Single colour LED", "3x RGB LED"})
+        Me.ComboBox3.Items.AddRange(New Object() {"3x Single colour LED", "1x RGB LED"})
         Me.ComboBox3.Location = New System.Drawing.Point(130, 315)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(206, 28)
@@ -410,10 +421,11 @@ Partial Class ArduinoForm
         '
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!)
         Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(551, 530)
+        Me.LinkLabel2.Location = New System.Drawing.Point(709, 427)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(70, 17)
+        Me.LinkLabel2.Size = New System.Drawing.Size(60, 15)
         Me.LinkLabel2.TabIndex = 67
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Blink Test"
@@ -444,12 +456,13 @@ Partial Class ArduinoForm
         'ComboBox9
         '
         Me.ComboBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox9.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox9.ForeColor = System.Drawing.Color.White
         Me.ComboBox9.FormattingEnabled = True
         Me.ComboBox9.Items.AddRange(New Object() {"30", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
-        Me.ComboBox9.Location = New System.Drawing.Point(425, 492)
+        Me.ComboBox9.Location = New System.Drawing.Point(425, 485)
         Me.ComboBox9.Name = "ComboBox9"
         Me.ComboBox9.Size = New System.Drawing.Size(81, 28)
         Me.ComboBox9.TabIndex = 88
@@ -457,12 +470,13 @@ Partial Class ArduinoForm
         'ComboBox10
         '
         Me.ComboBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox10.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox10.ForeColor = System.Drawing.Color.White
         Me.ComboBox10.FormattingEnabled = True
         Me.ComboBox10.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"})
-        Me.ComboBox10.Location = New System.Drawing.Point(425, 458)
+        Me.ComboBox10.Location = New System.Drawing.Point(425, 453)
         Me.ComboBox10.Name = "ComboBox10"
         Me.ComboBox10.Size = New System.Drawing.Size(81, 28)
         Me.ComboBox10.TabIndex = 86
@@ -470,12 +484,13 @@ Partial Class ArduinoForm
         'ComboBox12
         '
         Me.ComboBox12.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox12.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox12.ForeColor = System.Drawing.Color.White
         Me.ComboBox12.FormattingEnabled = True
         Me.ComboBox12.Items.AddRange(New Object() {"30", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
-        Me.ComboBox12.Location = New System.Drawing.Point(686, 487)
+        Me.ComboBox12.Location = New System.Drawing.Point(686, 485)
         Me.ComboBox12.Name = "ComboBox12"
         Me.ComboBox12.Size = New System.Drawing.Size(81, 28)
         Me.ComboBox12.TabIndex = 95
@@ -483,6 +498,7 @@ Partial Class ArduinoForm
         'ComboBox13
         '
         Me.ComboBox13.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox13.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox13.ForeColor = System.Drawing.Color.White
@@ -536,6 +552,7 @@ Partial Class ArduinoForm
         'ComboBox7
         '
         Me.ComboBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox7.Font = New System.Drawing.Font("Myriad Pro", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox7.ForeColor = System.Drawing.Color.White
@@ -587,10 +604,11 @@ Partial Class ArduinoForm
         '
         Me.LinkLabel5.AutoSize = True
         Me.LinkLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!)
         Me.LinkLabel5.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel5.Location = New System.Drawing.Point(290, 530)
+        Me.LinkLabel5.Location = New System.Drawing.Point(448, 427)
         Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(70, 17)
+        Me.LinkLabel5.Size = New System.Drawing.Size(60, 15)
         Me.LinkLabel5.TabIndex = 111
         Me.LinkLabel5.TabStop = True
         Me.LinkLabel5.Text = "Blink Test"
@@ -599,10 +617,11 @@ Partial Class ArduinoForm
         '
         Me.LinkLabel6.AutoSize = True
         Me.LinkLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!)
         Me.LinkLabel6.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel6.Location = New System.Drawing.Point(31, 530)
+        Me.LinkLabel6.Location = New System.Drawing.Point(189, 425)
         Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(70, 17)
+        Me.LinkLabel6.Size = New System.Drawing.Size(60, 15)
         Me.LinkLabel6.TabIndex = 112
         Me.LinkLabel6.TabStop = True
         Me.LinkLabel6.Text = "Blink Test"
@@ -615,7 +634,7 @@ Partial Class ArduinoForm
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Myriad Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.Color.Transparent
-        Me.Button8.Location = New System.Drawing.Point(293, 558)
+        Me.Button8.Location = New System.Drawing.Point(293, 551)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(213, 35)
         Me.Button8.TabIndex = 113
@@ -630,7 +649,7 @@ Partial Class ArduinoForm
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Font = New System.Drawing.Font("Myriad Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.ForeColor = System.Drawing.Color.Transparent
-        Me.Button10.Location = New System.Drawing.Point(554, 558)
+        Me.Button10.Location = New System.Drawing.Point(554, 551)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(213, 35)
         Me.Button10.TabIndex = 114
@@ -641,11 +660,11 @@ Partial Class ArduinoForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Myriad Pro", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Myriad Pro", 12.8!, System.Drawing.FontStyle.Bold)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(93, 415)
+        Me.Label7.Location = New System.Drawing.Point(72, 413)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(102, 30)
+        Me.Label7.Size = New System.Drawing.Size(95, 27)
         Me.Label7.TabIndex = 115
         Me.Label7.Text = "Upvotes"
         '
@@ -653,11 +672,11 @@ Partial Class ArduinoForm
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Myriad Pro", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Myriad Pro", 12.8!, System.Drawing.FontStyle.Bold)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(348, 415)
+        Me.Label9.Location = New System.Drawing.Point(330, 413)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(117, 30)
+        Me.Label9.Size = New System.Drawing.Size(108, 27)
         Me.Label9.TabIndex = 116
         Me.Label9.Text = "Followers"
         '
@@ -665,11 +684,11 @@ Partial Class ArduinoForm
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Font = New System.Drawing.Font("Myriad Pro", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Myriad Pro", 12.8!, System.Drawing.FontStyle.Bold)
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(629, 415)
+        Me.Label12.Location = New System.Drawing.Point(593, 413)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(69, 30)
+        Me.Label12.Size = New System.Drawing.Size(65, 27)
         Me.Label12.TabIndex = 117
         Me.Label12.Text = "Posts"
         '
@@ -679,7 +698,7 @@ Partial Class ArduinoForm
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(332, 495)
+        Me.Label10.Location = New System.Drawing.Point(332, 490)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(76, 18)
         Me.Label10.TabIndex = 119
@@ -691,7 +710,7 @@ Partial Class ArduinoForm
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(332, 458)
+        Me.Label11.Location = New System.Drawing.Point(332, 453)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(69, 18)
         Me.Label11.TabIndex = 118
@@ -703,7 +722,7 @@ Partial Class ArduinoForm
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(593, 495)
+        Me.Label13.Location = New System.Drawing.Point(593, 490)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(76, 18)
         Me.Label13.TabIndex = 121
@@ -715,7 +734,7 @@ Partial Class ArduinoForm
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(593, 458)
+        Me.Label14.Location = New System.Drawing.Point(593, 453)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(69, 18)
         Me.Label14.TabIndex = 120
@@ -753,12 +772,97 @@ Partial Class ArduinoForm
         Me.PictureBox5.TabIndex = 125
         Me.PictureBox5.TabStop = False
         '
+        'ComboBox6
+        '
+        Me.ComboBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox6.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox6.ForeColor = System.Drawing.Color.White
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Items.AddRange(New Object() {"Green", "Blue", "Red", "Orange", "Yellow", "Violet", "Pink", "Aqua", "White"})
+        Me.ComboBox6.Location = New System.Drawing.Point(164, 517)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(83, 28)
+        Me.ComboBox6.TabIndex = 126
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox8.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox8.ForeColor = System.Drawing.Color.White
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Items.AddRange(New Object() {"Green", "Blue", "Red", "Orange", "Yellow", "Violet", "Pink", "Aqua", "White"})
+        Me.ComboBox8.Location = New System.Drawing.Point(425, 517)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(81, 28)
+        Me.ComboBox8.TabIndex = 127
+        '
+        'ComboBox11
+        '
+        Me.ComboBox11.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox11.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox11.ForeColor = System.Drawing.Color.White
+        Me.ComboBox11.FormattingEnabled = True
+        Me.ComboBox11.Items.AddRange(New Object() {"Green", "Blue", "Red", "Orange", "Yellow", "Violet", "Pink", "Aqua", "White"})
+        Me.ComboBox11.Location = New System.Drawing.Point(686, 517)
+        Me.ComboBox11.Name = "ComboBox11"
+        Me.ComboBox11.Size = New System.Drawing.Size(81, 28)
+        Me.ComboBox11.TabIndex = 128
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(593, 517)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(50, 18)
+        Me.Label18.TabIndex = 131
+        Me.Label18.Text = "Colour"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.White
+        Me.Label19.Location = New System.Drawing.Point(332, 517)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(50, 18)
+        Me.Label19.TabIndex = 130
+        Me.Label19.Text = "Colour"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
+        Me.Label20.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(76, 517)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(50, 18)
+        Me.Label20.TabIndex = 129
+        Me.Label20.Text = "Colour"
+        '
         'ArduinoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Blinkit.My.Resources.Resources.backround_051
         Me.ClientSize = New System.Drawing.Size(1082, 753)
+        Me.Controls.Add(Me.LinkLabel5)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.ComboBox11)
+        Me.Controls.Add(Me.ComboBox8)
+        Me.Controls.Add(Me.ComboBox6)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
@@ -770,7 +874,6 @@ Partial Class ArduinoForm
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.LinkLabel6)
-        Me.Controls.Add(Me.LinkLabel5)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
@@ -810,6 +913,7 @@ Partial Class ArduinoForm
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox5)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ArduinoForm"
         Me.Text = "Blinkit - Arduino"
@@ -875,4 +979,10 @@ Partial Class ArduinoForm
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents ComboBox8 As ComboBox
+    Friend WithEvents ComboBox11 As ComboBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
 End Class
