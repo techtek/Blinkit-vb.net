@@ -194,7 +194,7 @@ Partial Class ArduinoForm
         Me.ComboBox5.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox5.ForeColor = System.Drawing.Color.White
         Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"30", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
+        Me.ComboBox5.Items.AddRange(New Object() {"30", "50", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
         Me.ComboBox5.Location = New System.Drawing.Point(164, 483)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(83, 28)
@@ -461,7 +461,7 @@ Partial Class ArduinoForm
         Me.ComboBox9.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox9.ForeColor = System.Drawing.Color.White
         Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Items.AddRange(New Object() {"30", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
+        Me.ComboBox9.Items.AddRange(New Object() {"30", "50", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
         Me.ComboBox9.Location = New System.Drawing.Point(425, 485)
         Me.ComboBox9.Name = "ComboBox9"
         Me.ComboBox9.Size = New System.Drawing.Size(81, 28)
@@ -489,7 +489,7 @@ Partial Class ArduinoForm
         Me.ComboBox12.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox12.ForeColor = System.Drawing.Color.White
         Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Items.AddRange(New Object() {"30", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
+        Me.ComboBox12.Items.AddRange(New Object() {"30", "50", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
         Me.ComboBox12.Location = New System.Drawing.Point(686, 485)
         Me.ComboBox12.Name = "ComboBox12"
         Me.ComboBox12.Size = New System.Drawing.Size(81, 28)

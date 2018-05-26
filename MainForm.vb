@@ -97,6 +97,15 @@
         Dim webAddress As String = "https://steemit.com/@techtek"
         Process.Start(webAddress)
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ' Show the Webcam form
+        LogitechForm.Show()
+        LogitechForm.BringToFront()
+
+        ' Hide the main form when the Webcam screen is shown
+        Me.Hide()
+    End Sub
 End Class
 
 

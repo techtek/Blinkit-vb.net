@@ -77,6 +77,16 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Blinkit.My.Resources.Resources.ButtonLogitechG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.ButtonLogitechgG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Blinkit.My.Resources.Resources.Buttonphilipshue">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -142,6 +152,21 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Blinkit.My.Resources.Resources.logitech_orion_spark_wall_e1522722019129">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechlogo_01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechlogog_01_01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Blinkit.My.Resources.Resources.Logo">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -158,6 +183,11 @@ Blinkit
 </summary>
 </member>
 <member name="P:Blinkit.My.Resources.Resources.LogoUSB">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.orion_spark_wall_e1522722019129">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

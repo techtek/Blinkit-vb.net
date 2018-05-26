@@ -148,7 +148,7 @@ Partial Class MainForm
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.White
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonLogitechgG
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.White
