@@ -52,6 +52,8 @@ Partial Class LogitechForm
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,7 +62,7 @@ Partial Class LogitechForm
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Location = New System.Drawing.Point(33, 166)
+        Me.PictureBox6.Location = New System.Drawing.Point(32, 128)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(92, 62)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -73,7 +75,7 @@ Partial Class LogitechForm
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(30, 371)
+        Me.Label8.Location = New System.Drawing.Point(30, 367)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(47, 18)
         Me.Label8.TabIndex = 135
@@ -86,7 +88,7 @@ Partial Class LogitechForm
         Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button32.Font = New System.Drawing.Font("Myriad Pro", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button32.ForeColor = System.Drawing.Color.White
-        Me.Button32.Location = New System.Drawing.Point(288, 368)
+        Me.Button32.Location = New System.Drawing.Point(287, 363)
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(43, 24)
         Me.Button32.TabIndex = 134
@@ -100,7 +102,7 @@ Partial Class LogitechForm
         Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button33.Font = New System.Drawing.Font("Myriad Pro", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button33.ForeColor = System.Drawing.Color.White
-        Me.Button33.Location = New System.Drawing.Point(248, 368)
+        Me.Button33.Location = New System.Drawing.Point(247, 363)
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(43, 24)
         Me.Button33.TabIndex = 133
@@ -117,7 +119,7 @@ Partial Class LogitechForm
         Me.ComboBox7.FormattingEnabled = True
         Me.ComboBox7.ItemHeight = 16
         Me.ComboBox7.Items.AddRange(New Object() {"SpaceGlitters.wav", "ToasterDing.wav", "Succession.wav", "DripEcho.wav", "UserPreset1.wav", "UserPreset2.wav"})
-        Me.ComboBox7.Location = New System.Drawing.Point(125, 368)
+        Me.ComboBox7.Location = New System.Drawing.Point(125, 364)
         Me.ComboBox7.Name = "ComboBox7"
         Me.ComboBox7.Size = New System.Drawing.Size(117, 24)
         Me.ComboBox7.TabIndex = 132
@@ -128,7 +130,7 @@ Partial Class LogitechForm
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Myriad Pro", 7.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(30, 437)
+        Me.Label6.Location = New System.Drawing.Point(30, 429)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(77, 14)
         Me.Label6.TabIndex = 131
@@ -140,7 +142,7 @@ Partial Class LogitechForm
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(30, 238)
+        Me.Label4.Location = New System.Drawing.Point(30, 200)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(79, 18)
         Me.Label4.TabIndex = 127
@@ -155,7 +157,7 @@ Partial Class LogitechForm
         Me.ComboBox1.ForeColor = System.Drawing.Color.White
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"})
-        Me.ComboBox1.Location = New System.Drawing.Point(125, 266)
+        Me.ComboBox1.Location = New System.Drawing.Point(125, 228)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(86, 28)
         Me.ComboBox1.TabIndex = 125
@@ -166,7 +168,7 @@ Partial Class LogitechForm
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox1.ForeColor = System.Drawing.Color.White
-        Me.RichTextBox1.Location = New System.Drawing.Point(125, 234)
+        Me.RichTextBox1.Location = New System.Drawing.Point(125, 196)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(206, 26)
         Me.RichTextBox1.TabIndex = 124
@@ -283,7 +285,7 @@ Partial Class LogitechForm
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.Transparent
-        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonB1
+        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonUtopian
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
@@ -304,7 +306,7 @@ Partial Class LogitechForm
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(30, 271)
+        Me.Label1.Location = New System.Drawing.Point(30, 233)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(69, 18)
         Me.Label1.TabIndex = 144
@@ -316,7 +318,7 @@ Partial Class LogitechForm
         Me.RichTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox2.ForeColor = System.Drawing.Color.White
-        Me.RichTextBox2.Location = New System.Drawing.Point(125, 437)
+        Me.RichTextBox2.Location = New System.Drawing.Point(125, 429)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
         Me.RichTextBox2.Size = New System.Drawing.Size(385, 20)
@@ -329,7 +331,7 @@ Partial Class LogitechForm
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(30, 339)
+        Me.Label3.Location = New System.Drawing.Point(30, 301)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(50, 18)
         Me.Label3.TabIndex = 148
@@ -344,7 +346,7 @@ Partial Class LogitechForm
         Me.ComboBox3.ForeColor = System.Drawing.Color.White
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Green", "Blue", "Red", "Orange", "Yellow", "Violet", "Pink", "Aqua", "White"})
-        Me.ComboBox3.Location = New System.Drawing.Point(125, 334)
+        Me.ComboBox3.Location = New System.Drawing.Point(125, 296)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(86, 28)
         Me.ComboBox3.TabIndex = 147
@@ -416,7 +418,7 @@ Partial Class LogitechForm
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(30, 403)
+        Me.Label7.Location = New System.Drawing.Point(30, 399)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 18)
         Me.Label7.TabIndex = 155
@@ -432,7 +434,7 @@ Partial Class LogitechForm
         Me.ComboBox6.ForeColor = System.Drawing.Color.White
         Me.ComboBox6.FormattingEnabled = True
         Me.ComboBox6.Items.AddRange(New Object() {"Steem Account Upvotes", "Steem Account Followers", "Steem Account Posts"})
-        Me.ComboBox6.Location = New System.Drawing.Point(125, 398)
+        Me.ComboBox6.Location = New System.Drawing.Point(125, 394)
         Me.ComboBox6.Name = "ComboBox6"
         Me.ComboBox6.Size = New System.Drawing.Size(205, 28)
         Me.ComboBox6.TabIndex = 154
@@ -443,7 +445,7 @@ Partial Class LogitechForm
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(30, 305)
+        Me.Label2.Location = New System.Drawing.Point(30, 267)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(76, 18)
         Me.Label2.TabIndex = 157
@@ -458,10 +460,36 @@ Partial Class LogitechForm
         Me.ComboBox2.ForeColor = System.Drawing.Color.White
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"30", "50", "100", "150", "200", "400", "500", "600", "700", "800", "900", "1000"})
-        Me.ComboBox2.Location = New System.Drawing.Point(125, 300)
+        Me.ComboBox2.Location = New System.Drawing.Point(125, 262)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(86, 28)
         Me.ComboBox2.TabIndex = 156
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Myriad Pro", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(29, 335)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(44, 18)
+        Me.Label5.TabIndex = 159
+        Me.Label5.Text = "Mode"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox4.Font = New System.Drawing.Font("Myriad Pro", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4.ForeColor = System.Drawing.Color.White
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"LED"})
+        Me.ComboBox4.Location = New System.Drawing.Point(125, 330)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(117, 28)
+        Me.ComboBox4.TabIndex = 158
         '
         'LogitechForm
         '
@@ -469,6 +497,8 @@ Partial Class LogitechForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Blinkit.My.Resources.Resources.backround_051
         Me.ClientSize = New System.Drawing.Size(1082, 753)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label7)
@@ -538,4 +568,6 @@ Partial Class LogitechForm
     Friend WithEvents ComboBox6 As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents ComboBox4 As ComboBox
 End Class

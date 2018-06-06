@@ -155,6 +155,12 @@
     <Compile Include="Transparantpicturebox.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UtopianForm1.Designer.vb">
+      <DependentUpon>UtopianForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UtopianForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WebcamForm.Designer.vb">
       <DependentUpon>WebcamForm.vb</DependentUpon>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ArduinoForm.resx">
       <DependentUpon>ArduinoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtopianForm1.resx">
+      <DependentUpon>UtopianForm1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WebcamForm.resx">
       <DependentUpon>WebcamForm.vb</DependentUpon>
@@ -241,6 +250,14 @@
     <None Include="Resources\ButtonUSBclicked.JPG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+    <None Include="Resources\c-description__shadow.png" />
+    <None Include="Resources\tumblr_ooq8zltUW71v9zdmao1_400 %281%29.png" />
+    <None Include="Resources\tumblr_ooq8zltUW71v9zdmao1_400.png" />
+    <None Include="Resources\vector-smart-object-copy%402x.png" />
+    <None Include="Resources\utopianbg2.jpg" />
+    <None Include="Resources\UtopianBG.JPG" />
+    <None Include="Resources\ButtonUtopian.JPG" />
     <None Include="Resources\logitechlogog-01-01.png" />
     <None Include="Resources\ButtonLogitechgG.JPG" />
     <None Include="Resources\ButtonLogitechG.JPG" />
@@ -263,6 +280,8 @@
     <Content Include="Logo2.ico" />
     <Content Include="Resources\21366-200.png" />
     <None Include="Resources\backround-051.png" />
+    <None Include="Resources\9b9ea434d1e015fac0bee0181c611940.png" />
+    <None Include="Resources\257959886021212.png" />
     <Content Include="Resources\ButtonArduinoclicked.JPG" />
     <None Include="Resources\ButtonB1.JPG" />
     <None Include="Resources\ButtonSteempunk.JPG" />

@@ -203,9 +203,9 @@ Partial Class MainForm
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = Global.Blinkit.My.Resources.Resources.Logo
-        Me.PictureBox2.Location = New System.Drawing.Point(163, 30)
+        Me.PictureBox2.Location = New System.Drawing.Point(142, 12)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(179, 121)
+        Me.PictureBox2.Size = New System.Drawing.Size(213, 158)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 13
         Me.PictureBox2.TabStop = False

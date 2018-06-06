@@ -213,4 +213,16 @@
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
 
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        ' Open the Utopian Upvote Bot Visualizer UtopianForm1, when the Utopian Button6 is pressed
+        UtopianForm1.Show()
+        UtopianForm1.BringToFront()
+
+        ' Hide the device settings form
+        Me.Hide()
+
+        ' change the default device in ComboBox6 to "USB Flash Drive"
+        UtopianForm1.ComboBox6.Text = "USB Flash Drive"
+    End Sub
 End Class

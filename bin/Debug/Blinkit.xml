@@ -27,6 +27,16 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Blinkit.My.Resources.Resources._257959886021212">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources._9b9ea434d1e015fac0bee0181c611940">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Blinkit.My.Resources.Resources.a89665eaee8c31a35870996951cb9388">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -142,7 +152,22 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Blinkit.My.Resources.Resources.ButtonUtopian">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Blinkit.My.Resources.Resources.Buttonwebcam">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.c_description__shadow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.giphy">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -208,6 +233,31 @@ Blinkit
 </summary>
 </member>
 <member name="P:Blinkit.My.Resources.Resources.SonoffLogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.tumblr_ooq8zltUW71v9zdmao1_400">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.tumblr_ooq8zltUW71v9zdmao1_400__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.UtopianBG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.utopianbg2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.vector_smart_object_copy_2x">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

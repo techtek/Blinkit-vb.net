@@ -282,7 +282,7 @@ Partial Class PhilipshueForm
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.Transparent
-        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonB1
+        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonUtopian
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White

@@ -58,7 +58,7 @@ Partial Class UsbForm
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.Blinkit.My.Resources.Resources.LogoUSB
-        Me.PictureBox1.Location = New System.Drawing.Point(190, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(190, 34)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(127, 55)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -327,7 +327,7 @@ Partial Class UsbForm
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.White
-        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonB1
+        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonUtopian
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White

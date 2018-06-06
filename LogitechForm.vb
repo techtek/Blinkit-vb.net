@@ -64,6 +64,9 @@
             ComboBox3.Text = "White"
         End If
 
+        ' display the default Mode (LED, LCD, LED+LCD) into Combobox4
+        ComboBox4.Text = My.Computer.FileSystem.ReadAllText("config\logitechmode.txt")
+
     End Sub
 
 
@@ -106,6 +109,10 @@
         If ComboBox3.Text = "Pink" Then My.Computer.FileSystem.WriteAllText("config\logitechcolour.txt", "150 000 100", False, System.Text.Encoding.ASCII)
         If ComboBox3.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\logitechcolour.txt", "000 255 255", False, System.Text.Encoding.ASCII)
         If ComboBox3.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\logitechcolour.txt", "255 255 255", False, System.Text.Encoding.ASCII)
+
+        ' Save the mode (LED, LCD, LED+LCD) set by the user with combobox4 into 
+        My.Computer.FileSystem.WriteAllText("config\logitechmode.txt", ComboBox4.Text, False, System.Text.Encoding.ASCII)
+
     End Sub
 
     Private Sub LogitechForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -154,6 +161,19 @@
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        ' Open the Utopian Upvote Bot Visualizer UtopianForm1, when the Utopian Button6 is pressed
+        UtopianForm1.Show()
+        UtopianForm1.BringToFront()
+
+        ' Hide the device settings form
+        Me.Hide()
+
+        ' change the default device in ComboBox6 to "Logitech"
+        UtopianForm1.ComboBox6.Text = "Logitech"
 
     End Sub
 End Class

@@ -162,4 +162,16 @@
         lstDevices.Items.Clear()
         LoadDeviceList()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        ' Open the Utopian Upvote Bot Visualizer UtopianForm1, when the Utopian Button6 is pressed
+        UtopianForm1.Show()
+        UtopianForm1.BringToFront()
+
+        ' Hide the device settings form
+        Me.Hide()
+
+        ' change the default device in ComboBox6 to "Webcam"
+        UtopianForm1.ComboBox6.Text = "Webcam"
+    End Sub
 End Class

@@ -46,6 +46,7 @@ Partial Class WebcamForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -331,7 +332,7 @@ Partial Class WebcamForm
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.White
-        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonB1
+        Me.Button6.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonUtopian
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
@@ -423,4 +424,5 @@ Partial Class WebcamForm
     Friend WithEvents Button1 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents ColorDialog1 As ColorDialog
 End Class

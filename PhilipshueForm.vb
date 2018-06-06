@@ -114,5 +114,15 @@
         My.Computer.FileSystem.WriteAllText("config\soundsetting.txt", Button32.Text, False, System.Text.Encoding.ASCII)
     End Sub
 
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        ' Open the Utopian Upvote Bot Visualizer UtopianForm1, when the Utopian Button6 is pressed
+        UtopianForm1.Show()
+        UtopianForm1.BringToFront()
 
+        ' Hide the device settings form
+        Me.Hide()
+
+        ' change the default device in ComboBox6 to "Philips Hue"
+        UtopianForm1.ComboBox6.Text = "Philips Hue"
+    End Sub
 End Class
