@@ -225,4 +225,16 @@
         ' change the default device in ComboBox6 to "USB Flash Drive"
         UtopianForm1.ComboBox6.Text = "USB Flash Drive"
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ' Open the SteemMakers Upvote Bot Visualizer SteemmakerForm1, when the Steemmaker Button6 is pressed
+        SteemmakersForm1.Show()
+        SteemmakersForm1.BringToFront()
+
+        ' Hide the device settings form
+        Me.Hide()
+
+        ' change the default device in ComboBox6 to "USB Flash Drive"
+        SteemmakersForm1.ComboBox6.Text = "USB Flash Drive"
+    End Sub
 End Class

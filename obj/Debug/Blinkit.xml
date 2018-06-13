@@ -127,6 +127,11 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Blinkit.My.Resources.Resources.ButtonSteemMakers">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Blinkit.My.Resources.Resources.ButtonSteemnova">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -233,6 +238,16 @@ Blinkit
 </summary>
 </member>
 <member name="P:Blinkit.My.Resources.Resources.SonoffLogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.SteemMakers_Background_Image">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.Steemmakerslogo_01">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

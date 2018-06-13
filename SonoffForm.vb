@@ -120,4 +120,16 @@
         ' change the default device in ComboBox6 to "Sonoff"
         UtopianForm1.ComboBox6.Text = "Sonoff"
     End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        ' Open the SteemMakers Upvote Bot Visualizer SteemmakerForm1, when the Steemmaker Button6 is pressed
+        SteemmakersForm1.Show()
+        SteemmakersForm1.BringToFront()
+
+        ' Hide the device settings form
+        Me.Hide()
+
+        ' change the default device in ComboBox6 to "Sonoff"
+        SteemmakersForm1.ComboBox6.Text = "Sonoff"
+    End Sub
 End Class

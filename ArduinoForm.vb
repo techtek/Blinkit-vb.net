@@ -952,4 +952,16 @@ Public Class ArduinoForm
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
 
     End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        ' Open the SteemMakers Upvote Bot Visualizer SteemmakerForm1, when the Steemmaker Button6 is pressed
+        SteemmakersForm1.Show()
+        SteemmakersForm1.BringToFront()
+
+        ' Hide the device settings form
+        Me.Hide()
+
+        ' change the default device in ComboBox6 to "Arduino"
+        SteemmakersForm1.ComboBox6.Text = "Arduino"
+    End Sub
 End Class

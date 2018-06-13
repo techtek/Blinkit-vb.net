@@ -182,7 +182,7 @@ Partial Class SonoffForm
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.Color.White
-        Me.Button9.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonB1
+        Me.Button9.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonSteemMakers
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.White
