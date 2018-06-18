@@ -96,6 +96,12 @@
     <Compile Include="ArduinoConsoleForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SteempricevisualizerForm1.Designer.vb">
+      <DependentUpon>SteempricevisualizerForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SteempricevisualizerForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     <EmbeddedResource Include="ArduinoConsoleForm.resx">
       <DependentUpon>ArduinoConsoleForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SteempricevisualizerForm1.resx">
+      <DependentUpon>SteempricevisualizerForm1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +268,7 @@
     <None Include="Resources\ButtonUSBclicked.JPG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\steem.png" />
     <None Include="Resources\Steemmakerslogo-01.png" />
     <None Include="Resources\SteemMakers_Background_Image.png" />
     <None Include="Resources\ButtonSteemMakers.JPG" />

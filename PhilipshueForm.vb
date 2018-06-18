@@ -137,4 +137,16 @@
         ' change the default device in ComboBox6 to "Philips Hue"
         SteemmakersForm1.ComboBox6.Text = "Philips Hue"
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ' Open the Steem Price Visualizer SteempricevisualizerForm1, when Steem Button6 is pressed
+        SteempricevisualizerForm1.Show()
+        SteempricevisualizerForm1.BringToFront()
+
+        ' Hide the device settings form
+        Me.Hide()
+
+        ' change the default device in ComboBox6 to "Philips Hue"
+        SteempricevisualizerForm1.ComboBox6.Text = "Philips Hue"
+    End Sub
 End Class

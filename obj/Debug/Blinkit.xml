@@ -242,6 +242,11 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Blinkit.My.Resources.Resources.steem">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Blinkit.My.Resources.Resources.SteemMakers_Background_Image">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

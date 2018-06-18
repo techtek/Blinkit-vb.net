@@ -363,7 +363,7 @@ Partial Class UsbForm
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonB1
+        Me.Button2.BackgroundImage = Global.Blinkit.My.Resources.Resources.ButtonSteem
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.White

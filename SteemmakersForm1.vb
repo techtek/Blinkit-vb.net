@@ -43,7 +43,7 @@
             My.Computer.FileSystem.WriteAllText("config\steemmakersdevice.txt", "philipshue", False, System.Text.Encoding.ASCII)
         End If
 
-        ' Philips Hue
+        ' Webcam
         If ComboBox6.Text = "Webcam" Then
             My.Computer.FileSystem.WriteAllText("config\steemmakersdevice.txt", "webcam", False, System.Text.Encoding.ASCII)
         End If
@@ -52,7 +52,5 @@
 
     End Sub
 
-    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs)
 
-    End Sub
 End Class
