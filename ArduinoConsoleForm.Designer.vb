@@ -118,7 +118,9 @@ Partial Class ArduinoConsoleForm
         Me.Controls.Add(Me.txtSend)
         Me.Controls.Add(Me.BtnSend)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "ArduinoConsoleForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Blinkit - Arduino Console"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

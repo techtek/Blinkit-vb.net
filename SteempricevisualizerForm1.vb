@@ -59,7 +59,7 @@ Public Class SteempricevisualizerForm1
 
             ' USB
             If ComboBox6.Text = "USB Flash Drive" Then
-                Shell("bat\blink.bat", AppWinStyle.Hide)
+                Shell("blink.bat", AppWinStyle.Hide)
             End If
 
             ' Logitech

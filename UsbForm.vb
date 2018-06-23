@@ -20,8 +20,8 @@
         ComboBox1.Tag = My.Computer.FileSystem.ReadAllText("config\drive.txt")
         ComboBox1.Text = CStr(ComboBox1.Tag)
 
-        ' load the blinklength and diplay it in Combobox2
-        ComboBox2.Tag = My.Computer.FileSystem.ReadAllText("config\blinklength.txt")
+        ' load the number of blinks and diplay it in Combobox2
+        ComboBox2.Tag = My.Computer.FileSystem.ReadAllText("config\numberofblinks.txt")
         ComboBox2.Text = CStr(ComboBox2.Tag)
 
         ' Display the saved notification sound in ComboBox7
@@ -85,40 +85,7 @@
 
     End Sub
 
-    ' Refresh the listed Drives 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        ListView1.Items.Clear()
-        Dim i As Integer = 0
-        For Each drive As IO.DriveInfo In IO.DriveInfo.GetDrives
-            Dim itemText As String = drive.Name
-            Dim Type As String
-            Dim ltr As String = drive.Name
-            If drive.IsReady AndAlso drive.VolumeLabel <> "" Then
-                itemText = drive.VolumeLabel
-            Else
-                Select Case drive.DriveType
-                    Case IO.DriveType.Fixed : itemText = "Local Disk"
-                    Case IO.DriveType.CDRom : itemText = "CD/DVD"
-                    Case IO.DriveType.Network : itemText = "Network Drive"
-                    Case IO.DriveType.Removable : itemText = "USB Flash Drive"
 
-                End Select
-
-            End If
-            Select Case drive.DriveType
-                Case IO.DriveType.Fixed : Type = "Local Disk"
-                Case IO.DriveType.CDRom : Type = "CD/DVD"
-                Case IO.DriveType.Network : Type = "Network Drive"
-                Case IO.DriveType.Removable : Type = "USB Flash Drive"
-                Case IO.DriveType.Unknown : Type = "Unknown"
-            End Select
-            ListView1.Items.Add(itemText)
-            ListView1.Items(i).SubItems.Add(ltr)
-            ListView1.Items(i).SubItems.Add(Type)
-            i += 1
-
-        Next
-    End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         ' Save the username from the textBox to username.txt
@@ -142,17 +109,17 @@
 
         If ComboBox6.Text = "Steem Account Upvotes" Then
 
-            Shell("bat\upvotes.bat", vbNormalFocus)
+            Shell("upvotes.bat", vbNormalFocus)
         End If
 
         If ComboBox6.Text = "Steem Account Followers" Then
 
-            Shell("bat\followers.bat", vbNormalFocus)
+            Shell("followers.bat", vbNormalFocus)
         End If
 
         If ComboBox6.Text = "Steem Account Posts" Then
 
-            Shell("bat\posts.bat", vbNormalFocus)
+            Shell("posts.bat", vbNormalFocus)
         End If
 
 
@@ -160,7 +127,7 @@
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         ' Test blink the USB LED 
-        Shell("bat\blink.bat")
+        Shell("blink.bat")
 
     End Sub
 
@@ -181,8 +148,8 @@
         ' Update the Avatar picturebox when Save is pressed 
         PictureBox2.Image = New System.Drawing.Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData(fileReader2)))
 
-        ' Save selected Blinklength 
-        My.Computer.FileSystem.WriteAllText("config\blinklength.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
+        ' Save selected number of blinks 
+        My.Computer.FileSystem.WriteAllText("config\numberofblinks.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
 
         ' Save seleted USB drive 
         My.Computer.FileSystem.WriteAllText("config\drive.txt", ComboBox1.Text, False, System.Text.Encoding.ASCII)
@@ -250,4 +217,42 @@
         SteempricevisualizerForm1.ComboBox6.Text = "USB Flash Drive"
 
     End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        ' Refresh every second the listview1 that shows the availible drives
+
+        ListView1.Items.Clear()
+        Dim i As Integer = 0
+        For Each drive As IO.DriveInfo In IO.DriveInfo.GetDrives
+            Dim itemText As String = drive.Name
+            Dim Type As String
+            Dim ltr As String = drive.Name
+            If drive.IsReady AndAlso drive.VolumeLabel <> "" Then
+                itemText = drive.VolumeLabel
+            Else
+                Select Case drive.DriveType
+                    Case IO.DriveType.Fixed : itemText = "Local Disk"
+                    Case IO.DriveType.CDRom : itemText = "CD/DVD"
+                    Case IO.DriveType.Network : itemText = "Network Drive"
+                    Case IO.DriveType.Removable : itemText = "USB Flash Drive"
+
+                End Select
+
+            End If
+            Select Case drive.DriveType
+                Case IO.DriveType.Fixed : Type = "Local Disk"
+                Case IO.DriveType.CDRom : Type = "CD/DVD"
+                Case IO.DriveType.Network : Type = "Network Drive"
+                Case IO.DriveType.Removable : Type = "USB Flash Drive"
+                Case IO.DriveType.Unknown : Type = "Unknown"
+            End Select
+            ListView1.Items.Add(itemText)
+            ListView1.Items(i).SubItems.Add(ltr)
+            ListView1.Items(i).SubItems.Add(Type)
+            i += 1
+
+        Next
+    End Sub
+
 End Class
