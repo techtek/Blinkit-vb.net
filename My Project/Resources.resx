@@ -118,23 +118,104 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg303" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg303.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonB1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="120700-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\120700-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoUSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoUSB.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tumblr_ooq8zltUW71v9zdmao1_400 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tumblr_ooq8zltUW71v9zdmao1_400 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="utopianbg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\utopianbg2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_51.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonR1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonUSB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonUSB1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tumblr_ooq8zltUW71v9zdmao1_400" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tumblr_ooq8zltUW71v9zdmao1_400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonLogitech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonLogitech.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="philipshue8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\philipshue8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonSound.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonwebcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonwebcam.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonUSBclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonUSBclicked.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SteemMakers_Background_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SteemMakers_Background_Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechg933" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg933.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonLogitechgG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonLogitechgG.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonSteem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonSteem.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="g11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\g11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ARDUINO_UNO_A06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ARDUINO_UNO_A06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="orion-spark-wall-e1522722019129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\orion-spark-wall-e1522722019129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backround-051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backround-051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechg510s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg510s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonArduino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonArduino.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vector-smart-object-copy@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vector-smart-object-copy@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonBlinkit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonBlinkit.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechlogog-01-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechlogog-01-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoUSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoUSB.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogitechG15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogitechG15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Steemmakerslogo-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Steemmakerslogo-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechg810" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg810.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechg13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SonoffLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SonoffLogo.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechlogo-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechlogo-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9b9ea434d1e015fac0bee0181c611940" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9b9ea434d1e015fac0bee0181c611940.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,139 +223,118 @@
   <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Settings.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonSonoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonSonoff.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonArduino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonArduino.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logitechlogo-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logitechlogo-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonLogitechG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonLogitechG.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logophilipshue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logophilipshue.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonSteem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonSteem.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SteemMakers_Background_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SteemMakers_Background_Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="background_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background_51.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logitechlogog-01-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logitechlogog-01-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonR1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonLogitech" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonLogitech.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="c-description__shadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c-description__shadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vector-smart-object-copy@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vector-smart-object-copy@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonSound.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonSteemnova" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonSteemnova.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonR11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonR11.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonUtopian" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonUtopian.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ARDUINO_UNO_A06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ARDUINO_UNO_A06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UtopianBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UtopianBG.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonLogitechgG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonLogitechgG.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="orion-spark-wall-e1522722019129" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\orion-spark-wall-e1522722019129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonUSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonUSB.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonSteemMakers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonSteemMakers.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="257959886021212" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\257959886021212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Buttonphilipshue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Buttonphilipshue.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonSteempunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonSteempunk.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="utopianbg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\utopianbg2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sonoffbasic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sonoffbasic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg710+" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg710+.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backround-051" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backround-051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hd-webcam-c310-gallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hd-webcam-c310-gallery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tumblr_ooq8zltUW71v9zdmao1_400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tumblr_ooq8zltUW71v9zdmao1_400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="webcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\webcam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoArduino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoArduino.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonLogitechG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonLogitechG.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tumblr_ooq8zltUW71v9zdmao1_400 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tumblr_ooq8zltUW71v9zdmao1_400 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonUtopian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonUtopian.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="a89665eaee8c31a35870996951cb9388" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\a89665eaee8c31a35870996951cb9388.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechg610" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg610.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonArduinoclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonArduinoclicked1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonBlinkit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonBlinkit.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg510" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg510.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Buttonwebcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Buttonwebcam.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="G13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SonoffLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SonoffLogo.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg19s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg19s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonUSBclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonUSBclicked.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="steem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\steem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechg600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="philipshue8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\philipshue8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logitech orion-spark-wall-e1522722019129" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logitech orion-spark-wall-e1522722019129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="120700-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\120700-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logitechg633" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg633.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Steemmakerslogo-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Steemmakerslogo-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonSteemMakers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonSteemMakers.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="steem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\steem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logophilipshue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logophilipshue.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonSonoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonSonoff.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonSteempunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonSteempunk.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c-description__shadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c-description__shadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonSteemnova" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonSteemnova.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="257959886021212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\257959886021212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hd-webcam-c310-gallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hd-webcam-c310-gallery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonB1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a89665eaee8c31a35870996951cb9388" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a89665eaee8c31a35870996951cb9388.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonR11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonR11.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonUSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonUSB.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UtopianBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UtopianBG.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sonoffbasic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sonoffbasic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechg900" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg900.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoArduino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoArduino.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logitechg11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logitechg11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

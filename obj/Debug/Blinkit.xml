@@ -172,6 +172,16 @@ Blinkit
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Blinkit.My.Resources.Resources.g11">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.G13">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Blinkit.My.Resources.Resources.giphy">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -183,6 +193,96 @@ Blinkit
 </summary>
 </member>
 <member name="P:Blinkit.My.Resources.Resources.logitech_orion_spark_wall_e1522722019129">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg105">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg11">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg110">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg13">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.LogitechG15">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg19">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg19s">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg300">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg303">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg510">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg510s">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg600">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg610">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg633">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg710_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg810">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg900">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Blinkit.My.Resources.Resources.logitechg933">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

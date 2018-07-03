@@ -268,6 +268,26 @@
     <None Include="Resources\ButtonUSBclicked.JPG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\logitechg11.png" />
+    <None Include="Resources\logitechg933.png" />
+    <None Include="Resources\logitechg900.png" />
+    <None Include="Resources\logitechg810.png" />
+    <None Include="Resources\logitechg710+.png" />
+    <None Include="Resources\logitechg633.png" />
+    <None Include="Resources\logitechg610.png" />
+    <None Include="Resources\logitechg600.png" />
+    <None Include="Resources\logitechg510s.png" />
+    <None Include="Resources\logitechg510.png" />
+    <None Include="Resources\logitechg303.png" />
+    <None Include="Resources\logitechg300.png" />
+    <None Include="Resources\logitechg110.png" />
+    <None Include="Resources\logitechg105.png" />
+    <None Include="Resources\logitechg19s.png" />
+    <None Include="Resources\logitechg19.png" />
+    <None Include="Resources\logitechg13.png" />
+    <None Include="Resources\G13.png" />
+    <None Include="Resources\g11.png" />
+    <None Include="Resources\LogitechG15.png" />
     <None Include="Resources\steem.png" />
     <None Include="Resources\Steemmakerslogo-01.png" />
     <None Include="Resources\SteemMakers_Background_Image.png" />

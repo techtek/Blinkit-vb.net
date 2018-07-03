@@ -21,8 +21,14 @@
         ' Display the Blink delay in ComboBox2
         ComboBox2.Text = My.Computer.FileSystem.ReadAllText("config\logitechdelay.txt")
 
-        ' Display the Blink delay in ComboBox2
+        ' Display the logitech LED dll path in RichTextBox2
         RichTextBox2.Text = My.Computer.FileSystem.ReadAllText("config\logitechpath.txt")
+
+        ' Display the logitech LCD dll path in RichTextBox2
+        RichTextBox3.Text = My.Computer.FileSystem.ReadAllText("config\logitechpathlcd.txt")
+
+        ' Display the logitech Device in ComBobox5
+        ComboBox5.Text = My.Computer.FileSystem.ReadAllText("config\logitechdevice.txt")
 
 
         ' Display the saved notification sound in ComboBox7
@@ -64,7 +70,7 @@
             ComboBox3.Text = "White"
         End If
 
-        ' display the default Mode (LED, LCD, LED+LCD) into Combobox4
+        ' display the default Mode (LED, LCD, LED,LCD) into Combobox4
         ComboBox4.Text = My.Computer.FileSystem.ReadAllText("config\logitechmode.txt")
 
     End Sub
@@ -96,8 +102,11 @@
         ' Save blink delay
         My.Computer.FileSystem.WriteAllText("config\logitechdelay.txt", ComboBox2.Text, False, System.Text.Encoding.ASCII)
 
-        ' Save the location of the Logitech DLL into logitechpath.txt
+        ' Save the location of the Logitech LED DLL into logitechpath.txt
         My.Computer.FileSystem.WriteAllText("config\logitechpath.txt", RichTextBox2.Text, False, System.Text.Encoding.ASCII)
+
+        ' Save the location of the Logitech LCD DLL into logitechpathlcd.txt
+        My.Computer.FileSystem.WriteAllText("config\logitechpathlcd.txt", RichTextBox3.Text, False, System.Text.Encoding.ASCII)
 
         ' Save the blink colour in logitechcolourled.txt
         If ComboBox3.Text = "Green" Then My.Computer.FileSystem.WriteAllText("config\logitechcolour.txt", "000 255 000", False, System.Text.Encoding.ASCII)
@@ -110,7 +119,7 @@
         If ComboBox3.Text = "Aqua" Then My.Computer.FileSystem.WriteAllText("config\logitechcolour.txt", "000 255 255", False, System.Text.Encoding.ASCII)
         If ComboBox3.Text = "White" Then My.Computer.FileSystem.WriteAllText("config\logitechcolour.txt", "255 255 255", False, System.Text.Encoding.ASCII)
 
-        ' Save the mode (LED, LCD, LED+LCD) set by the user with combobox4 into 
+        ' Save the mode ("LED", "LCD", "LED & LCD") set by the user with combobox4 into logitechmode.txt
         My.Computer.FileSystem.WriteAllText("config\logitechmode.txt", ComboBox4.Text, False, System.Text.Encoding.ASCII)
 
     End Sub
@@ -138,24 +147,39 @@
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
-        ' Blink the Logitech device by starting logitechblink.exe
-        Shell("logitechblink.exe")
+        ' Test Blink label  to blink the logitech device with logitechblink.exe
+
+
+        If ComboBox4.Text = "LED" Then
+            Shell("logitechblink.exe", AppWinStyle.Hide)
+        End If
+
+        If ComboBox4.Text = "LCD" Then
+            Shell("logitechlcd.exe", AppWinStyle.Hide)
+        End If
+
+        If ComboBox4.Text = "LED,LCD" Then
+            Shell("logitechblink.exe", AppWinStyle.Hide)
+            Shell("logitechlcd.exe", AppWinStyle.Hide)
+        End If
+
     End Sub
+
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         ' Start to look for new upvotes/followers/posts by starting the related bat script
         If ComboBox6.Text = "Steem Account Upvotes" Then
-
+            My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "upvote", False, System.Text.Encoding.ASCII)
             Shell("upvoteslogitech.bat", vbNormalFocus)
         End If
 
         If ComboBox6.Text = "Steem Account Followers" Then
-
+            My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "follower", False, System.Text.Encoding.ASCII)
             Shell("followerslogitech.bat", vbNormalFocus)
         End If
 
         If ComboBox6.Text = "Steem Account Posts" Then
-
+            My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "post", False, System.Text.Encoding.ASCII)
             Shell("postslogitech.bat", vbNormalFocus)
         End If
     End Sub
@@ -199,6 +223,402 @@
 
         ' change the default device in ComboBox6 to "Logitech"
         SteempricevisualizerForm1.ComboBox6.Text = "Logitech"
+    End Sub
+
+
+
+
+
+
+
+
+    Private Sub ComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox4.SelectedIndexChanged
+
+        If ComboBox4.Text = "LED" Then
+
+            ' Save the mode ("LED", "LCD", "LED & LCD") set by the user with combobox4 into logitechmode.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechmode.txt", ComboBox4.Text, False, System.Text.Encoding.ASCII)
+
+            Panel1.Visible = True
+        End If
+
+
+        If ComboBox4.Text = "LCD" Then
+
+            ' Save the mode ("LED", "LCD", "LED & LCD") set by the user with combobox4 into logitechmode.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechmode.txt", ComboBox4.Text, False, System.Text.Encoding.ASCII)
+
+            Panel1.Visible = False
+        End If
+
+
+        If ComboBox4.Text = "LED,LCD" Then
+
+            ' Save the mode ("LED", "LCD", "LED & LCD") set by the user with combobox4 into logitechmode.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechmode.txt", ComboBox4.Text, False, System.Text.Encoding.ASCII)
+
+            Panel1.Visible = True
+        End If
+
+
+    End Sub
+
+    Private Sub ComboBox6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox6.SelectedIndexChanged
+
+        If ComboBox6.Text = "Steem Account Upvotes" Then
+            My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "upvote", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox6.Text = "Steem Account Followers" Then
+            My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "follower", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox6.Text = "Steem Account Posts" Then
+            My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "post", False, System.Text.Encoding.ASCII)
+        End If
+    End Sub
+
+    Private Sub ComboBox5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox5.SelectedIndexChanged
+
+        If ComboBox5.Text = "G11" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg11
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+
+            ' Hide the colour dropdown menu combobox3 and label3, this devices is monochrome
+            ComboBox3.Visible = False
+            Label3.Visible = False
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G11", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G13" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg13
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Items.Add("LCD")
+            ComboBox4.Items.Add("LED,LCD")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G13", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G15" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.LogitechG15
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Items.Add("LCD")
+            ComboBox4.Items.Add("LED,LCD")
+            ComboBox4.Text = "LED"
+
+            ' Hide the colour dropdown menu combobox3 and label3, this devices is monochrome
+            ComboBox3.Visible = False
+            Label3.Visible = False
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G15", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G19" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg19
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G19", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G19s" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg19s
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G19s", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G105" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg105
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Hide the colour dropdown menu combobox3 and label3, this devices is monochrome
+            ComboBox3.Visible = False
+            Label3.Visible = False
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G105", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G110" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg110
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G110", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G300" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg300
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G300", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G303" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg303
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G303", False, System.Text.Encoding.ASCII)
+        End If
+
+
+        If ComboBox5.Text = "G510" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg510
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Items.Add("LCD")
+            ComboBox4.Items.Add("LED,LCD")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G510", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G510s" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg510s
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G510s", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G600" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg600
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G600", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G610" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg610
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Hide the colour dropdown menu combobox3 and label3, this devices is monochrome
+            ComboBox3.Visible = False
+            Label3.Visible = False
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G610", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G633" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg633
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G633", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G710+" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg710_
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Hide the colour dropdown menu combobox3 and label3, this devices is monochrome
+            ComboBox3.Visible = False
+            Label3.Visible = False
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G710+", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G633" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg633
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G633", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G810" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg810
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G810", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G900" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg900
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G900", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G910" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitech_orion_spark_wall_e1522722019129
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G910", False, System.Text.Encoding.ASCII)
+        End If
+
+        If ComboBox5.Text = "G933" Then
+            ' Change the Logitech model picture, to the selected model, and show the Mode it supports in ComboBox4
+            PictureBox2.Image = Blinkit.My.Resources.Resources.logitechg933
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add("LED")
+            ComboBox4.Text = "LED"
+
+            ' Show the colour dropdown menu combobox3, this devices supports RGB colours
+            ComboBox3.Visible = True
+            ComboBox3.Text = "Green" ' show the first colour value 
+            Label3.Visible = True
+
+            ' Save the chosen Logitech model inside logitechdeivce.txt
+            My.Computer.FileSystem.WriteAllText("config\logitechdevice.txt", "G933", False, System.Text.Encoding.ASCII)
+        End If
+
+
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+
+        ' Toggle the visability ON for DLL paths and labels located on panel2
+        If LinkLabel1.LinkColor = Color.LightGray Then
+            LinkLabel1.LinkColor = Color.White
+            Panel2.Visible = True
+
+            ' Toggle the visability OFF for  DLL paths and labels located on panel2
+        ElseIf LinkLabel1.LinkColor = Color.White Then
+            LinkLabel1.LinkColor = Color.LightGray
+            Panel2.Visible = False
+
+        End If
     End Sub
 End Class
 

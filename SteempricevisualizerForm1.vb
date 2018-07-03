@@ -36,17 +36,6 @@ Public Class SteempricevisualizerForm1
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     'loop Blink the selected device 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
 
@@ -64,7 +53,9 @@ Public Class SteempricevisualizerForm1
 
             ' Logitech
             If ComboBox6.Text = "Logitech" Then
+                My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "steem", False, System.Text.Encoding.ASCII)
                 Shell("logitechblink.exe", AppWinStyle.Hide)
+                Shell("logitechlcd.exe", AppWinStyle.Hide)
             End If
 
             ' Sonoff
@@ -251,4 +242,3 @@ Public Class SteempricevisualizerForm1
 
 
 End Class
-

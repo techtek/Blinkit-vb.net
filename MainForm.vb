@@ -39,9 +39,6 @@
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs)
 
-
-
-
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs)

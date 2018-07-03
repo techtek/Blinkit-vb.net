@@ -25,6 +25,7 @@ Public Class UtopianForm1
 
         ' Logitech
         If ComboBox6.Text = "Logitech" Then
+            My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "utopian", False, System.Text.Encoding.ASCII)
             My.Computer.FileSystem.WriteAllText("config\utopiandevice.txt", "logitech", False, System.Text.Encoding.ASCII)
         End If
 

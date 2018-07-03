@@ -1,1 +1,1 @@
-{"username":"techtek","votes":{"received":6854}}
+{"username":"techtek","votes":{"received":7157}}

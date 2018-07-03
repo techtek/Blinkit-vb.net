@@ -363,6 +363,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property g11() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("g11", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property G13() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("G13", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property giphy() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("giphy", resourceCulture)
@@ -386,6 +406,186 @@ Namespace My.Resources
         Friend ReadOnly Property logitech_orion_spark_wall_e1522722019129() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("logitech orion-spark-wall-e1522722019129", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg105() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg105", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg11() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg11", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg110() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg110", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg13() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg13", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LogitechG15() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LogitechG15", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg19() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg19", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg19s() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg19s", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg300() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg300", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg303() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg303", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg510() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg510", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg510s() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg510s", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg600() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg600", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg610() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg610", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg633() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg633", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg710_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg710+", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg810() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg810", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg900() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg900", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logitechg933() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logitechg933", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -34,10 +34,7 @@
 
     Private Sub UsbForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
-
-
-        ' Get Drives and display them 
+        ' Get Drives and display them in listview1
         ListView1.Items.Clear()
         Dim i As Integer = 0
         For Each drive As IO.DriveInfo In IO.DriveInfo.GetDrives

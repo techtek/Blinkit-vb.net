@@ -25,6 +25,7 @@
 
         ' Logitech
         If ComboBox6.Text = "Logitech" Then
+            My.Computer.FileSystem.WriteAllText("config\logitechaction.txt", "steemmakers", False, System.Text.Encoding.ASCII)
             My.Computer.FileSystem.WriteAllText("config\steemmakersdevice.txt", "logitech", False, System.Text.Encoding.ASCII)
         End If
 
